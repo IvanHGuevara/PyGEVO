@@ -1,5 +1,4 @@
-import asyncio
-
+from utils_.general_functions import General_functions
 class Algorithms:
 
     def __init__(self, grammar) -> None:
@@ -13,11 +12,7 @@ class Algorithms:
             for ind in population:
                 #evolvedInd = list(map(lambda codon: self.grammar.generateCompliantRandomProductionLine(codon % divisor) , ind))
                 evolvedInd = list(
-                    self.async_map(lambda codon: self.grammar.generateCompliantRandomProductionLine(codon % divisor), ind))
+                    General_functions.async_map(lambda codon: self.grammar.generateCompliantRandomProductionLine(codon % divisor), ind))
                 evolvedIndividuals.append(evolvedInd)
         return evolvedIndividuals
 
-    def async_map(self,coroutine_func, iterable):
-        loop = asyncio.get_event_loop()
-        future = asyncio.gather(*(coroutine_func(param) for param in iterable))
-        return loop.run_until_complete(future)
