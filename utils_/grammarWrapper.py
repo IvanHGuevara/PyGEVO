@@ -18,7 +18,7 @@ class GrammarWrapper:
     def getProductionRule(self, number):
         return self.getProductionRules()[number]
 
-    def generateCompliantRandomProductionLine(self, number):
+    async def generateCompliantRandomProductionLine(self, number):
         productionLine = self.getProductionRule(number)
         #We should generate the random string based on the grammar
         str = ''.join(random.SystemRandom().choice(string.ascii_letters) for _ in range(random.randint(1,8)))
