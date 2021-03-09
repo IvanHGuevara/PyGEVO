@@ -1,4 +1,4 @@
-from utils.grammarReader import GrammarWrapper
+from utils.grammarWrapper import GrammarWrapper
 from utils.population import Population
 from utils.algorithms import Algorithms
 
