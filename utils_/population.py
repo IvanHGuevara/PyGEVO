@@ -26,6 +26,5 @@ class Population:
         for _ in range(self.individualSize):
             individual.append(randint(1,255))
         self.pop.append(individual)
-
         return individual
 
