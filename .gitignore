@@ -1,1 +1,4 @@
-utils_/__pycache__/*.cpython-37.pyc
+utils/*
+.idea
+utils_/__pycache__/
+*.pyc
