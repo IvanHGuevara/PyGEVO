@@ -1,0 +1,4 @@
+<inicio>:=izquierda <sig>|derecha <sig>
+<sig>:=adelantar <matiz>|atras <matiz>|adelantar <inicio>|atras <inicio>|<sig>|<EOF>
+<matiz>:=golpear|agacharse|disparar|<EOF>
+<EOF>:=

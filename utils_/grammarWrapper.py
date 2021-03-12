@@ -16,5 +16,3 @@ class GrammarWrapper:
 
     def getProductionRuleNumber(self, number):
         return self.getProductionRules()[number]
-
-

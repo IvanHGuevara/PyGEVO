@@ -1,3 +1,9 @@
+import cython
+import numpy as np
+#@cython.locals(
+#        one='int',i='int'
+#    )
+
 class Mapper:
 
     def __init__(self, grammar) -> None:
@@ -42,7 +48,7 @@ class Mapper:
                 p = p + 1
             cDefinitions = len(xPosibles)
             n=individual%cDefinitions
-            print(str(individual)+"->rest "+str(n)+"-->"+xPosibles[n])
+            #print(str(individual)+"->rest "+str(n)+"-->"+xPosibles[n])
 
             xDefinition=xPosibles[n]
             for search in self.vWords:
@@ -50,6 +56,9 @@ class Mapper:
                         start=self.vWords.index(search)
                         print(str(start)+" encontrado "+search)
                         xDefinition=xDefinition.replace(search,self.mapBNF(individuals[1:], start))
+            
+            if xDefinition.find("<") != -1:
+                xDefinition = None
 
             return xDefinition
 

@@ -12,5 +12,5 @@ class Algorithms:
         for _ in range(gen):
             for ind in population:
                 phenotype=self.mapper.mapBNF(ind,0)
-                evolvedIndividuals.append(phenotype)
+                evolvedIndividuals.append(phenotype)        
         return evolvedIndividuals
