@@ -31,17 +31,13 @@ def toMatrixBNF(bnf):
             #print(vDefinitions.index(definition))
             #print(word+"->"+definition)
             #print(mBNF)
-    print(vWords)
-    print(vDefinitions)
-    for lBnf in mBNF:
-        print(lBnf)
+    #print(vWords)
+    #print(vDefinitions)
+    #for lBnf in mBNF:
+    #    print(lBnf)
     return vWords,vDefinitions,mBNF
 
 def mapBNF(bnf,individues,inicio,y, x, m ):
-
-
-
-
     i = inicio
     for individue in individues:
 
@@ -52,14 +48,17 @@ def mapBNF(bnf,individues,inicio,y, x, m ):
                 xPosibles.append(x[p])
             p = p + 1
         cDefinitions = len(xPosibles)
-        n=individue%cDefinitions
-        print(str(individue)+"->rest "+str(n)+"-->"+xPosibles[n])
+        try:
+            n=individue%cDefinitions
+        except:
+            return 0
+        #print(str(individue)+"->rest "+str(n)+"-->"+xPosibles[n])
 
         xDefinition=xPosibles[n]
         for busqueda in y:
            if busqueda in xDefinition:
                 inicio=y.index(busqueda)
-                print(str(inicio)+" encontrado "+busqueda)
+                #print(str(inicio)+" encontrado "+busqueda)
                 xDefinition=xDefinition.replace(busqueda,mapBNF(bnf, individues[1:], inicio,y, x, m))
 
         return xDefinition
@@ -69,12 +68,12 @@ def mapBNF(bnf,individues,inicio,y, x, m ):
         #    if busqueda in xDefinition:
         #        print("encontrado "+busqueda)
 
-bnf=\
-    "<inicio>:=izquierda <sig>|derecha <sig>|atras\n" \
-    "<sig>:=adelantar <motriz>|atras <motriz>\n" \
-    "<motriz>:=golpear|agacharse|disparar"
-y, x, m = toMatrixBNF(bnf)
-print(" ")
-penotype=mapBNF(bnf,[10,9,11],0,y, x, m)
-print(" ")
-print(penotype)
+#bnf=\
+#    "<inicio>:=izquierda <sig>|derecha <sig>|atras\n" \
+#    "<sig>:=adelantar <motriz>|atras <motriz>\n" \
+#    "<motriz>:=golpear|agacharse|disparar"
+#y, x, m = toMatrixBNF(bnf)
+#print(" ")
+#penotype=mapBNF(bnf,[10,9,11],0,y, x, m)
+#print(" ")
+#print(penotype)
