@@ -1,9 +1,16 @@
+import cython
+import numpy as np
+#@cython.locals(
+#        one='int',i='int'
+#    )
 
 def toMatrixBNF(bnf):
     lines=bnf.split("\n")
     vWords =[]
     vDefinitions=[]
+
     mBNF=[]
+    one=1
 
     #Carga de vectores con reglas y definiciones
     for line in lines:
@@ -14,6 +21,7 @@ def toMatrixBNF(bnf):
         definitions = line[1]
         definitions = definitions.split("|")
         for definition in definitions:
+            definition
             if (definition not in vDefinitions):
                 vDefinitions.append(definition)
             #definition.split(" ")
@@ -26,7 +34,7 @@ def toMatrixBNF(bnf):
         #print("definicion agregada:" + str(definitions))
         mBNF.append([0]*len(vDefinitions))
         for definition in definitions:
-            mBNF[vWords.index(word)][vDefinitions.index(definition)]=1
+            mBNF[vWords.index(word)][vDefinitions.index(definition)]=one
             #print(vWords.index(word))
             #print(vDefinitions.index(definition))
             #print(word+"->"+definition)
@@ -35,6 +43,7 @@ def toMatrixBNF(bnf):
     #print(vDefinitions)
     #for lBnf in mBNF:
     #    print(lBnf)
+    #mBNF = np.array(mBNF)
     return vWords,vDefinitions,mBNF
 
 def mapBNF(bnf,individues,inicio,y, x, m ):
@@ -63,17 +72,3 @@ def mapBNF(bnf,individues,inicio,y, x, m ):
 
         return xDefinition
 
-        #xDefinition=xPosibles[n]
-        #for busqueda in y:
-        #    if busqueda in xDefinition:
-        #        print("encontrado "+busqueda)
-
-#bnf=\
-#    "<inicio>:=izquierda <sig>|derecha <sig>|atras\n" \
-#    "<sig>:=adelantar <motriz>|atras <motriz>\n" \
-#    "<motriz>:=golpear|agacharse|disparar"
-#y, x, m = toMatrixBNF(bnf)
-#print(" ")
-#penotype=mapBNF(bnf,[10,9,11],0,y, x, m)
-#print(" ")
-#print(penotype)

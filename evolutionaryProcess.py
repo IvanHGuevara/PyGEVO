@@ -1,8 +1,10 @@
+from utils_.cythonFunctions import compileAll
+#compileAll.compiler()
 from utils_.grammarWrapper import GrammarWrapper
-from utils_.population import Population
+from utils_.cythonFunctions.population import Population
 from utils_.algorithms import Algorithms
 
-pop = Population(numberIndividuals=100000, individualSize=80)
+pop = Population(numberIndividuals=10000, individualSize=20)
 population = pop.generatePop()
 print(population)
 #grammar = GrammarWrapper("grammar_1.bnf")

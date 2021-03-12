@@ -2,6 +2,7 @@ from random import randint
 
 from utils_.general_functions import General_functions
 
+
 class Population:
 
     def __init__(self, numberIndividuals, individualSize = 5) -> None:
