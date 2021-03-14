@@ -4,9 +4,9 @@ from utils_.algorithms import Algorithms
 #compileAll.compiler()
 from utils_.algorithms import Algorithms
 
-pop = Population(numberIndividuals=1000000, individualSize=10)
+pop = Population(numberIndividuals=100000, individualSize=100)
 population = pop.generatePop()
-algo = Algorithms("/Users/iguevara/Projects/Confirm Centre/PyGE/grammar.bnf")
+algo = Algorithms("grammar_1.bnf")
 evolvedPop = algo.evolveWithGE(population, gen=10)
 print(evolvedPop)
 
