@@ -4,7 +4,7 @@ from utils_.algorithms import Algorithms
 #compileAll.compiler()
 from utils_.algorithms import Algorithms
 
-pop = Population(numberIndividuals=100000, individualSize=100)
+pop = Population(numberIndividuals=10000, individualSize=100)
 population = pop.generatePop()
 algo = Algorithms("grammar_1.bnf")
 evolvedPop = algo.evolveWithGE(population, gen=10)
