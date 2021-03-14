@@ -53,12 +53,13 @@ class Mapper:
             xDefinition=xPosibles[n]
             for search in self.vWords:
                 if search in xDefinition:
-                        start=self.vWords.index(search)
-                        print(str(start)+" encontrado "+search)
-                        xDefinition=xDefinition.replace(search,self.mapBNF(individuals[1:], start))
-            
-            if xDefinition.find("<") != -1:
-                xDefinition = None
+                        if self.vWords.count(search)>0:
+                            start=self.vWords.index(search)
+                            #print(str(start)+" encontrado "+search)
+
+                            xDefinition=xDefinition.replace(search,self.mapBNF(individuals[1:], start))
+
+
 
             return xDefinition
 
