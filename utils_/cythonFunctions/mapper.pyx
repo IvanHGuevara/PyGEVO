@@ -18,21 +18,21 @@ class Mapper:
         cdef str definitionsText
         cdef str definition
         cdef str line
-        #Carga de vectores con reglas y definiciones
+        # Loading vectors with rules and definitions
         for line in lines:
             lineV=line.split(":=")
             word=lineV[0]
             if(word not in self.vWords):
                 self.vWords.append(word)
             if len(lineV)!=2:
-                print("Error line no se puede separar en 2 por el simbolo :=  lineV=",str(lineV))
+                print("Error line, we cannot split in two for the := symbol. lineV=",str(lineV))
             definitionsText = lineV[1]
             definitions = definitionsText.split("|")
             for definition in definitions:
                 if (definition not in self.vDefinitions):
                     self.vDefinitions.append(definition)
         self.mBNF=np.zeros((len(lines),len(self.vDefinitions)))
-        #Carga de matriz
+        #Loading Matrix
         for line in lines:
             lineV=line.split(":=")
             word = lineV[0]
@@ -41,7 +41,7 @@ class Mapper:
             #self.mBNF.append([0]*len(self.vDefinitions))
             indexWord=self.vWords.index(word)
             if indexWord==-1:
-                print("Operador no encontrado indexWord="+word)
+                print("Operator not found indexWord="+word)
 
             for definition in definitions:
                 #self.mBNF[self.vWords.index(word)][self.vDefinitions.index(definition)]=1
@@ -69,8 +69,7 @@ class Mapper:
                         if self.vWords.count(search)>0:
                             start=self.vWords.index(search)
                             if start==-1:
-                                print("Operador no encontrado"+search)
-                            #print(str(start)+" encontrado "+search)
+                                print("Operator not found"+search)
                             if len(individuals[1:])>0:
                                     try:
                                         xDefinition=xDefinition.replace(search,self.mapBNF(individuals[1:], start)+" ")
