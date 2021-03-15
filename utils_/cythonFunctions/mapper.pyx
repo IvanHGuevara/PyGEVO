@@ -77,12 +77,12 @@ class Mapper:
                                     except MemoryError as error:
                                         # Output expected MemoryErrors.
                                         print(error)
-                                        return xDefinition.replace("  "," ")
+                                        return xDefinition
                                     except Exception as exception:
                                         # Output unexpected Exceptions.
                                         print(exception, False)
-                                        return xDefinition.replace("  "," ")
+                                        return xDefinition
                             else:
-                                return xDefinition.replace("  "," ")
-            return xDefinition.replace("  "," ")
+                                return xDefinition
+            return xDefinition
 
