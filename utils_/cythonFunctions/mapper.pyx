@@ -19,19 +19,7 @@ class Mapper:
         cdef str definition
         cdef str line
         # Loading vectors with rules and definitions
-        for line in lines:
-            lineV=line.split(":=")
-            word=lineV[0]
-            if(word not in self.vWords):
-                self.vWords.append(word)
-            if len(lineV)!=2:
-                print("Error line, we cannot split in two for the := symbol. lineV=",str(lineV))
-            definitionsText = lineV[1]
-            definitions = definitionsText.split("|")
-            for definition in definitions:
-                if (definition not in self.vDefinitions):
-                    self.vDefinitions.append(definition)
-        self.mBNF=np.zeros((len(lines),len(self.vDefinitions)))
+        self.mBNF=np.zeros((self.grammar.getProductionRules(),self.grammar.getNumberDefinitions()))
         #Loading Matrix
         for line in lines:
             lineV=line.split(":=")
@@ -51,7 +39,7 @@ class Mapper:
         cdef str search
         i = start
         cdef int p
-        for individual in individuals:
+        for codon in individuals:
 
             p = 0
             xPosibles = []
@@ -60,8 +48,8 @@ class Mapper:
                     xPosibles.append(self.vDefinitions[p])
                 p = p + 1
             cDefinitions = len(xPosibles)
-            n=individual%cDefinitions
-            #print(str(individual)+"->rest "+str(n)+"-->"+xPosibles[n])
+            n=codon%cDefinitions
+            #print(str(codon)+"->rest "+str(n)+"-->"+xPosibles[n])
 
             xDefinition=xPosibles[n]
             for search in self.vWords:

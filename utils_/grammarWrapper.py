@@ -16,3 +16,6 @@ class GrammarWrapper:
 
     def getProductionRuleNumber(self, number):
         return self.getProductionRules()[number]
+
+    def getNumberDefinitions(self):
+        return len(list(map(lambda x: x[1].split("|"),list(map(lambda x: x.split(":="), self.grammar.getProductionRules())))))
