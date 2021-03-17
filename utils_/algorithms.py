@@ -1,4 +1,5 @@
 from utils_.cythonFunctions.mapper import Mapper
+#from utils_.mapper import Mapper
 from utils_.grammarWrapper import GrammarWrapper
 
 class Algorithms:
@@ -11,6 +12,7 @@ class Algorithms:
         evolvedIndividuals = []
         for _ in range(gen):
             for ind in population:
-                phenotype=self.mapper.mapBNF(ind,initBNF-1,debug).replace(" ","").replace("<"," <").replace(">","> ").replace(" < =","<=").replace(" > ="," >=").replace(" < <","<<").replace(" > >"," >= ")
+                phenotype,ind=self.mapper.mapBNF(ind,initBNF-1,debug)
+                phenotype=phenotype.replace("<"," <").replace(">","> ").replace("chr(60)","<").replace("chr(62)",">")
                 evolvedIndividuals.append(phenotype)
         return evolvedIndividuals

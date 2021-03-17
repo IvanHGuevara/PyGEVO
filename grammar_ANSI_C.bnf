@@ -22,18 +22,18 @@
 <exclusive-or-expression> := <and-expression> | <exclusive-or-expression> ^ <and-expression>
 <and-expression> := <equality-expression> | <and-expression> & <equality-expression>
 <equality-expression> := <relational-expression> | <equality-expression> == <relational-expression> | <equality-expression> != <relational-expression>
-<relational-expression> := <shift-expression> | <relational-expression> < <shift-expression> | <relational-expression> > <shift-expression> | <relational-expression> <= <shift-expression> | <relational-expression> >= <shift-expression>
-<shift-expression> := <additive-expression> | <shift-expression> << <additive-expression> | <shift-expression> >> <additive-expression>
+<relational-expression> := <shift-expression> | <relational-expression> chr(60) <shift-expression> | <relational-expression> chr(62) <shift-expression> | <relational-expression> chr(60)= <shift-expression> | <relational-expression> chr(62)= <shift-expression>
+<shift-expression> := <additive-expression> | <shift-expression> chr(60)chr(60) <additive-expression> | <shift-expression> chr(62)chr(62) <additive-expression>
 <additive-expression> := <multiplicative-expression> | <additive-expression> + <multiplicative-expression> | <additive-expression> - <multiplicative-expression>
 <multiplicative-expression> := <cast-expression> | <multiplicative-expression> * <cast-expression> | <multiplicative-expression> / <cast-expression> | <multiplicative-expression> % <cast-expression>
 <cast-expression> := <unary-expression> | ( <type-name> ) <cast-expression>
 <unary-expression> := <postfix-expression> | ++ <unary-expression> | -- <unary-expression> | <unary-operator> <cast-expression> | sizeof <unary-expression> | sizeof <type-name>
-<postfix-expression> := <primary-expression> | <postfix-expression> [ <expression> ] | <postfix-expression> ( { <assignment-expression> }* ) | <postfix-expression> . <identifier> | <postfix-expression> -> <identifier> | <postfix-expression> ++ | <postfix-expression> --
+<postfix-expression> := <primary-expression> | <postfix-expression> [ <expression> ] | <postfix-expression> ( { <assignment-expression> }* ) | <postfix-expression> . <identifier> | <postfix-expression> -chr(62) <identifier> | <postfix-expression> ++ | <postfix-expression> --
 <primary-expression> := <identifier> | <constant> | <string> | ( <expression> )
 <constant> := <integer-constant> | <character-constant> | <floating-constant> | <enumeration-constant>
 <expression> := <assignment-expression> | <expression> , <assignment-expression>
 <assignment-expression> := <conditional-expression> | <unary-expression> <assignment-operator> <assignment-expression>
-<assignment-operator> := = | *= | /= | %= | += | -= | <<= | >>= | &= | ^= | |=
+<assignment-operator> := = | *= | /= | %= | += | -= | chr(60)chr(60)= | chr(62)chr(62)= | &= | ^= | |=
 <unary-operator> := & | * | + | - | ~ | !
 <type-name> := { <specifier-qualifier> }+ { <abstract-declarator> }?
 <parameter-type-list> := <parameter-list> | <parameter-list> , ...

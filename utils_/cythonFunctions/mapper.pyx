@@ -62,22 +62,39 @@ class Mapper:
                 p = p + 1
             cDefinitions = len(xPosibles)
             n=individual%cDefinitions
-
             #time.sleep(2)
             xDefinition=xPosibles[n]
-            pIni=xDefinition.find("<")
-            pFin=xDefinition.find(">")
-            search=xDefinition[pIni:pFin+1]
-            if search in self.vWords:
-                if len(individuals[1:])>0:
+
+
+            while len(individuals[1:])>=1 :
+                if debug:
+                    print(str(len(individuals))+"->"+str(individuals))
+                pIni=xDefinition.find("<")
+                pFin=xDefinition.find(">")+1
+
+                search=xDefinition[pIni:pFin]
+                #time.sleep(1)
+                if debug:
+                    print(xDefinition)
+                if search in self.vWords:
+
                     if debug:
-
-
                         print("")
                         print("Position:"+str(start+1)+" IndividualNumber:"+str(individual)+" ->Definition:"+str(xDefinition)+" -->Select:"+str(n)+" --->Select-Non-Terminal:"+search )
 
+                    mapA,ind=self.mapBNF(individuals[1:], self.vWords.index(search),debug)
+                    xDefinition=xDefinition.replace(search,mapA,1)
 
-                    xDefinition=xDefinition.replace(search,self.mapBNF(individuals[1:], self.vWords.index(search),debug),1)
 
-            return xDefinition
+
+                    if ind>0:
+                        individuals=individuals[-ind:]
+                    else:
+                        individuals=np.random.randint(255, size=(0))
+
+                else:
+
+                    return xDefinition,len(individuals[1:])
+
+            return xDefinition,0
 
