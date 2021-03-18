@@ -1,21 +1,30 @@
+import numpy as np
 from pathlib import Path
 
 class GrammarWrapper:
     def __init__(self, grammarFile) -> None:
         grammarText = Path(grammarFile).read_text()
         self.grammar = grammarText
-    
-    def getProductionRules(self):
-        return self.grammar.split("\n")
+        self.generateGrammarComponents()
+
+    def generateGrammarComponents(self):
+        self.grammarDict = {}
+        self.productionRules = self.grammar.split("\n")
+        for rule in self.productionRules:
+            rule = rule.split(":=")
+            # We use strip() because the BNF grammar contains whitespaces
+            productions = list(map(lambda x: x.strip(), rule[1:][0].split("|")))
+            # We use strip() because the BNF grammar contains whitespaces
+            self.grammarDict[rule[0].strip()] = productions
     
     def getDivisor(self):
         return len(self.getProductionRules())
     
-    def getNumberOfProductionRules(self):
-        return len(self.getProductionRules())
+    def getProductionRulesFromWord(self, word):
+        return self.grammarDict[word]
 
-    def getProductionRuleNumber(self, number):
-        return self.getProductionRules()[number]
+    def getVWords(self):
+        return list(map(lambda x: x.strip(), self.grammarDict.keys()))
 
-    def getNumberDefinitions(self):
-        return len(list(map(lambda x: x[1].split("|"),list(map(lambda x: x.split(":="), self.grammar.getProductionRules())))))
+    def getProductionRules(self):
+        return sum(list(self.grammarDict.values()),[])

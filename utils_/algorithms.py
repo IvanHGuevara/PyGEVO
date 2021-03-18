@@ -11,6 +11,6 @@ class Algorithms:
         evolvedIndividuals = []
         for _ in range(gen):
             for ind in population:
-                phenotype=self.mapper.mapBNF(ind,initBNF-1).replace("  "," ")
-                evolvedIndividuals.append(phenotype)
+                phenotype=self.mapper.mapBNF(ind,initBNF-1)
+                evolvedIndividuals.append(phenotype[0])
         return evolvedIndividuals

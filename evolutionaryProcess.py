@@ -5,7 +5,7 @@ from utils_.algorithms import Algorithms
 
 pop = Population(numberIndividuals=10000, individualSize=8)
 population = pop.generatePop()
-algo = Algorithms("grammar.bnf")
+algo = Algorithms("grammar_ANSI_C.bnf")
 evolvedPop = algo.evolveWithGE(population, gen=1, initBNF=56)
 for p in evolvedPop:
     print(p)
