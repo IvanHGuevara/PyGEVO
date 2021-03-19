@@ -1,12 +1,12 @@
 from utils_.cythonFunctions import compileAll
-#compileAll.compiler()
+compileAll.compiler()
 from utils_.cythonFunctions.population import Population
 from utils_.algorithms import Algorithms
 
 pop = Population(numberIndividuals=10000, individualSize=8)
 population = pop.generatePop()
 algo = Algorithms("grammar_ANSI_C.bnf")
-evolvedPop = algo.evolveWithGE(population, gen=1, initBNF=56)
+evolvedPop = algo.evolveWithGE(population, gen=2, initBNF=56,debug=False)
 for p in evolvedPop:
     print(p)
     print("\n")
