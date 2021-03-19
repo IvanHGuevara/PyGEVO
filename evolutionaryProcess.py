@@ -10,4 +10,3 @@ evolvedPop = algo.evolveWithGE(population, gen=1, initBNF=56)
 for p in evolvedPop:
     print(p)
     print("\n")
-
