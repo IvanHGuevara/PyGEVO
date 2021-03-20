@@ -18,21 +18,26 @@ class GA:
         g=np.array(list(self.mutateInd(ind[0]) for ind in individuals))
         individuals = self.algorithms.evolveWithGE(g)
         return individuals
-    def crossoverInds(self,ind1,ind2):
-        size = min(len(ind1), len(ind2))
-        point = random.randint(1, size - 1)
+    def crossoverInds(self,ind1,ind2,point):
         ind1[point:], ind2[point:] = ind2[point:], ind1[point:]
         return ind1, ind2
     def crossover(self,individuals):
         g =list(list(ind[0]) for ind in individuals)
         gs=[]
-        i=0
-        lss=g
-        for ind1 in g:
-            lss=lss[1:]
-            for ind2 in lss:
-                i1,i2=self.crossoverInds(ind1,ind2)
-                gs.append(i1)
-                gs.append(i2)
-        individuals = self.algorithms.evolveWithGE(gs)
+        point = random.randint(1, len(g[0]) - 1)
+        print(point)
+        g1=g
+        g2=g
+        for ind1 in g1:
+
+            for ind2 in g2:
+                if ind1!=ind2 :
+                    i1,i2=self.crossoverInds(ind1,ind2,point)
+                    if i1 not in gs:
+                        gs.append(i1)
+                    if i2 not in gs:
+                        gs.append(i2)
+
+        gs_a=np.array(gs)
+        individuals = self.algorithms.evolveWithGE(gs_a)
         return individuals
