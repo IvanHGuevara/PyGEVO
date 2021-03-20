@@ -8,8 +8,6 @@ class General_functions:
         future = asyncio.gather(*(coroutine_func(param) for param in iterable))
         return loop.run_until_complete(future)
 
-
-
     def async_map_g(f, iterable):
         group = Group()
         return group.map(f, iterable)
