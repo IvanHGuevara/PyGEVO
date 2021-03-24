@@ -15,5 +15,6 @@ def initialise_test():
 def test_grammarMethods():
     mapper = initialise_test()
     assert(mapper.grammar.getVWords()) == ['<inicio>', '<sig>', '<matiz>']
-
+    assert(mapper.grammar.getProductionRules()) == ['izquierda <sig>', 'derecha <sig>', 'adelantar <matiz>', 'atras <matiz>', 'adelantar <inicio>', 'atras <inicio>', '<sig>', '<EOF>', 'golpear', 'agacharse', 'disparar', '<EOF>'] 
+    assert(mapper.grammar.getProductionRulesForPosition(0)) == ['izquierda <sig>', 'derecha <sig>']
 

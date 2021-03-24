@@ -4,9 +4,9 @@ class GrammarWrapper:
     def __init__(self, grammarFile) -> None:
         grammarText = Path(grammarFile).read_text()
         self.grammar = grammarText
-        self.generateGrammarComponents()
+        self.generateAndPrecalculateGrammarComponents()
 
-    def generateGrammarComponents(self):
+    def generateAndPrecalculateGrammarComponents(self):
         self.grammarDict = {}
         self.productionRules = self.grammar.split("\n")
         for rule in self.productionRules:
@@ -15,18 +15,17 @@ class GrammarWrapper:
             productions = list(map(lambda x: x.strip(), rule[1:][0].split("|")))
             # We use strip() because the BNF grammar contains whitespaces
             self.grammarDict[rule[0].strip()] = productions
-    
-    def getDivisor(self):
-        return len(self.getProductionRules())
+        self.VWords = list(map(lambda x: x.strip(), self.grammarDict.keys()))
+        self.productionRulesList = list(self.grammarDict.values())
     
     def getProductionRulesFromWord(self, word):
         return self.grammarDict[word]
 
     def getVWords(self):
-        return list(map(lambda x: x.strip(), self.grammarDict.keys()))
-
+        return self.VWords
+        
     def getProductionRules(self):
-        return sum(list(self.grammarDict.values()),[])
+        return sum(self.productionRulesList,[])
 
     def getProductionRulesForPosition(self, position):
-        return list(self.grammarDict.values())[position]
+        return self.productionRulesList[position]
