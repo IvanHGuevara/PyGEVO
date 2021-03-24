@@ -27,3 +27,6 @@ class GrammarWrapper:
 
     def getProductionRules(self):
         return sum(list(self.grammarDict.values()),[])
+
+    def getProductionRulesForPosition(self, position):
+        return list(self.grammarDict.values())[position]

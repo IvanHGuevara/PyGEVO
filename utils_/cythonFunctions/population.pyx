@@ -1,6 +1,7 @@
 #from random import randint
 #from utils_.general_functions import General_functions
 import numpy as np
+from .Individual import Individual
 
 class Population:
 
@@ -20,6 +21,11 @@ class Population:
     #    self.pop.append(ind)
 
     def generatePop(self):
-        self.pop =  np.random.randint(255, size=(self.numberIndividuals,self.individualSize))
-        return self.pop
+        individuals = []
+        self.pop = np.random.randint(255, size=(self.numberIndividuals,self.individualSize))
+        for genotype in self.pop:
+            ind = Individual()
+            ind.genotype = genotype
+            individuals.append(ind)
+        return individuals
 
