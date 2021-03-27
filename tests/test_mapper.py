@@ -1,19 +1,22 @@
+from grammarContainer import GrammarContainer
 import sys
 sys.path.append('../')
 from utils_.grammarWrapper import GrammarWrapper
 from utils_.cythonFunctions.mapper import Mapper
 
-grammar = None
-mapper = None
 
 def initialise_test():
-    grammar = GrammarWrapper("BNF_test_1.bnf") 
-    mapper = Mapper(grammar)
+    mapper = Mapper(GrammarWrapper.createFromString(GrammarContainer.grammartController()))
     mapper.toMatrixBNF()
+    print(mapper.mBNF)
     return mapper
 
-def test_grammarMethods():
+def test_check_creation_matrix():
+    # Matrix creation for production rules
     mapper = initialise_test()
-    assert(mapper.grammar.getVWords()) == ['<inicio>', '<sig>', '<matiz>']
+    assert((mapper.mBNF[0] == [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]).all() == True)
+    assert((mapper.mBNF[1] == [0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]).all() == True)
+    assert((mapper.mBNF[2] == [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]).all() == True)
+
 
 

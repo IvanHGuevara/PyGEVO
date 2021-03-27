@@ -1,10 +1,19 @@
 from pathlib import Path
 
 class GrammarWrapper:
-    def __init__(self, grammarFile) -> None:
-        grammarText = Path(grammarFile).read_text()
+
+    def __init__(self, grammarText) -> None:
         self.grammar = grammarText
         self.generateAndPrecalculateGrammarComponents()
+
+    @classmethod
+    def createFromFile(cls, grammarFile):
+        grammarText = Path(grammarFile).read_text()
+        return cls(grammarText) 
+    
+    @classmethod
+    def createFromString(cls, stringText):
+        return cls(stringText) 
 
     def generateAndPrecalculateGrammarComponents(self):
         self.grammarDict = {}
