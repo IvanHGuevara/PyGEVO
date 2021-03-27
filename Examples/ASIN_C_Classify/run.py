@@ -11,7 +11,7 @@ import time
 import shutil
 import subprocess
 
-def runPhenotype(penotype,n):
+def runPhenotype(penotype,n,lenPopulation):
     #define sistem
     system = platform.system()
     pathAnterior=os.getcwd()
@@ -42,7 +42,6 @@ def runPhenotype(penotype,n):
         # Compile
         bashCommand = "gcc -pipe -o Build//" + fileName + " Build//" + fileName + ".c "+fileLib+".exe -lm "
         os.system(bashCommand)
-
         bashCommand = "cd Build & "+fileName+".exe  & cd .."
     elif system=="Darwin":
         # Compile
@@ -56,18 +55,30 @@ def runPhenotype(penotype,n):
     except:
         print("score did not dump in "+"Build//"+fileName+"_out.txt")
     score=str(int(result))
-    print("Result_exect_Score " + fileName + ": " + score)
+    porcentProgress=int(int(fileName)*100/int(lenPopulation))
+    print(fileName + "/"+str(lenPopulation)+" ->"+str(porcentProgress)+"% ->"+"Result_exect_Score: " + score)
     file = open("Build//"+fileName+"_out.txt", 'w')
     file.write(score)
     file.close()
     os.chdir(pathAnterior)
+
 def preparateExperiment():
     #remove all files Build
     try:
-        shutil.rm("Build")
-        os.mkdir('Build')
+        if os.path.isdir("Build"):
+            shutil.rm("Build")
+            time.sleep(1)
+        else:
+            time.sleep(1)
+            os.mkdir('Build')
     except:
-        os.mkdir('Build')
+        if os.path.isdir("Build"):
+            time.sleep(1)
+            shutil.rmtree("Build")
+        else:
+            time.sleep(1)
+            os.mkdir('Build')
+
         print("Warning shutil.rmtree(Build)")
 
     #compile libs
@@ -75,6 +86,7 @@ def preparateExperiment():
     bashCommand = "gcc -Wall -Wextra -Wpedantic -g -o "+fileLib+".exe -c "+fileLib+".c "
     os.system(bashCommand)
     #copy data
+    time.sleep(1)
     fuente = "SampleData.txt"
     destino = "Build//SampleData.txt"
     shutil.copyfile(fuente, destino)
@@ -91,12 +103,12 @@ def preparateExperiment():
     destino = "Build//GEClassify.exe"
     shutil.copyfile(fuente, destino)
 
-def prossesIndividue(ind,i):
+def prossesIndividue(ind,i,lenPopulation):
     print(ind.genotype)
     print(ind.phenotype)
     print(ind.fitness_score)
     if str(ind.phenotype).count("<")==0 and str(ind.phenotype).count(">")==0:
-        runPhenotype(ind.phenotype,i)
+        runPhenotype(ind.phenotype,i,lenPopulation)
     print("----------------------------------------------------------------------------------------------------------")
 
 def createPhenotypes():
@@ -105,8 +117,8 @@ def createPhenotypes():
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", gen=5, initBNF=1, debug=False)
     evolvedPop = algo.evolveWithGE_(population, 3)
-
-    General_functions.async_map_g((lambda ind: prossesIndividue(ind[1],ind[0])), enumerate(evolvedPop))
+    lenPopulation=len(evolvedPop)
+    General_functions.async_map_g((lambda ind: prossesIndividue(ind[1],ind[0],lenPopulation)), enumerate(evolvedPop))
     #for ind in evolvedPop:
 
 createPhenotypes()
