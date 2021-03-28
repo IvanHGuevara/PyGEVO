@@ -54,14 +54,14 @@ def runPhenotype(penotype,n,lenPopulation):
         # result=os.system(bashCommand)
     except:
         print("score did not dump in "+"Build//"+fileName+"_out.txt")
-    score=str(int(result))
+    score=int(result)
     porcentProgress=int(int(fileName)*100/int(lenPopulation))
-    print(fileName + "/"+str(lenPopulation)+" ->"+str(porcentProgress)+"% ->"+"Result_exect_Score: " + score)
+    print(fileName + "/"+str(lenPopulation)+" ->"+str(porcentProgress)+"% ->"+"Result_exect_Score: " + str(score))
     file = open("Build//"+fileName+"_out.txt", 'w')
-    file.write(score)
+    file.write(str(score))
     file.close()
     os.chdir(pathAnterior)
-
+    return score
 def preparateExperiment():
     #remove all files Build
     try:
@@ -106,19 +106,25 @@ def preparateExperiment():
 def prossesIndividue(ind,i,lenPopulation):
     print(ind.genotype)
     print(ind.phenotype)
-    print(ind.fitness_score)
     if str(ind.phenotype).count("<")==0 and str(ind.phenotype).count(">")==0:
-        runPhenotype(ind.phenotype,i,lenPopulation)
+        score=runPhenotype(ind.phenotype,i,lenPopulation)
+        if type(score) is int:
+            ind.fitness_score=score
+        else:
+            ind.fitness_score = 0
+    else:
+        ind.fitness_score = 0
+    #print(ind.fitness_score)
     print("----------------------------------------------------------------------------------------------------------")
-
+    return ind
 def createPhenotypes():
     preparateExperiment()
-    pop = Population(numberIndividuals=6, individualSize=100)
+    pop = Population(numberIndividuals=6, individualSize=50)
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", gen=5, initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_(population, 3)
+    evolvedPop = algo.evolveWithGE_1(population, prossesIndividue,3)
     lenPopulation=len(evolvedPop)
-    General_functions.async_map_g((lambda ind: prossesIndividue(ind[1],ind[0],lenPopulation)), enumerate(evolvedPop))
+    #General_functions.async_map_g((lambda ind: prossesIndividue(ind[1],ind[0],lenPopulation)), enumerate(evolvedPop))
     #for ind in evolvedPop:
 
 createPhenotypes()
