@@ -66,8 +66,9 @@ class Algorithms:
             individualBatch = GA.crossover(individualBatch, self)
             newPopulation = np.concatenate((individualBatch, population))
             print("reevaluate new population")
-            newPopulation = list(map(lambda ind: GA.evaluate(ind, FitnessFunctions.griewangk), newPopulation))
-            individualBatch = sorted(enumerate(individualBatch), key= lambda ind: fitness_function(ind[1],ind[0]+1,len(individualBatch)).fitness_score, reverse=True)
+            newPopulation = list(map(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
+            #individualBatch = sorted(enumerate(individualBatch), key= lambda ind: (fitness_function(ind[1],ind[0]+1,len(individualBatch)).fitness_score,len(ind[1].phenotype)), reverse=True)
+            newPopulation = sorted(newPopulation, key=lambda ind: ind.fitness_score, reverse=True)
 
             print("===================================================================")
             population = newPopulation
