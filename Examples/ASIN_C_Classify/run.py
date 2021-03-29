@@ -61,12 +61,14 @@ def runPhenotype(penotype,n,lenPopulation):
     file.write(str(score))
     file.close()
     os.chdir(pathAnterior)
+    os.remove("Build//" + fileName + ".c")
+    os.remove("Build//"+fileName+".exe")
     return score
 def preparateExperiment():
     #remove all files Build
     try:
         if os.path.isdir("Build"):
-            shutil.rm("Build")
+            shutil.rmtree("Build")
             time.sleep(1)
         else:
             time.sleep(1)
@@ -119,12 +121,21 @@ def prossesIndividue(ind,i,lenPopulation):
     return ind
 def createPhenotypes():
     preparateExperiment()
-    pop = Population(numberIndividuals=6, individualSize=50)
+    pop = Population(numberIndividuals=10, individualSize=20)
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", gen=5, initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_1(population, prossesIndividue,3)
+    evolvedPop = algo.evolveWithGE_1(population, prossesIndividue,4)
     lenPopulation=len(evolvedPop)
     #General_functions.async_map_g((lambda ind: prossesIndividue(ind[1],ind[0],lenPopulation)), enumerate(evolvedPop))
     #for ind in evolvedPop:
-
+    inds=list(filter((lambda ind: ind.phenotype[0].count("<")==0), evolvedPop))
+    inds=sorted(inds,
+           key=lambda ind: ind.fitness_score, reverse=True)
+    print("")
+    print("Top mejores 20:")
+    for ind in inds[0:20] :
+        print(ind.genotype)
+        print(ind.phenotype)
+        print(ind.fitness_score)
+        print("========================================================================================================")
 createPhenotypes()

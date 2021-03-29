@@ -47,7 +47,7 @@ class Algorithms:
                 ind.phenotype = evolvedIndividuals[idx]
         return population
 
-    def evolveWithGE_1(self, population,fitness_function, gen = 1, initBNF=1):
+    def evolveWithGE_FitnesFunction(self, population,fitness_function, gen = 1, initBNF=1,porcent=0.5):
         evolvedIndividuals = []
         for generationNumber in range(gen):
             print("Generation: ", generationNumber)
@@ -55,8 +55,8 @@ class Algorithms:
             for ind in population:
                 ind.phenotype=self.mapper.mapBNF(ind.genotype,initBNF-1)
                 evolvedIndividuals.append(ind)
-            print("selecting individuals with a probability of: ", 0.5)
-            individualBatch = GA.select(evolvedIndividuals,0.5)
+            print("selecting individuals with a probability of: ", porcent)
+            individualBatch = GA.select(evolvedIndividuals,porcent)
             print("Grabbing a batch of: ", len(individualBatch))
             print("mutating individuals.......")
             individualBatch = list(map(lambda indG: GA.mutateInd(indG), individualBatch))
@@ -64,10 +64,9 @@ class Algorithms:
             individualBatch = GA.crossover(individualBatch, self)
             newPopulation = np.concatenate((individualBatch, population))
             print("reevaluate new population")
-            newPopulation = list(map(lambda ind: GA.evaluate(ind, FitnessFunctions.griewangk), newPopulation))
+
             individualBatch = sorted(enumerate(individualBatch), key= lambda ind: fitness_function(ind[1],ind[0]+1,len(individualBatch)).fitness_score, reverse=True)
-            individualBatch = individualBatch[:100]
-            evolvedIndividuals = []
+            newPopulation = list(map(lambda ind: GA.evaluate(ind, FitnessFunctions.griewangk), newPopulation))
             print("===================================================================")
             population = newPopulation
         return population

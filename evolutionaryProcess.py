@@ -1,5 +1,5 @@
 from utils_.cythonFunctions import compileAll
-#compileAll.compiler()
+compileAll.compiler()
 from utils_.cythonFunctions.population import Population
 from utils_.algorithms import Algorithms
 from utils_.search_operators.ga import GA
