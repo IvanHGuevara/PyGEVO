@@ -38,7 +38,9 @@ def fitnesFunction(phenotype,dim):
     evolved = np.zeros(len(dim), dtype=float)
     for i in range(0,len(dim[0])):
         try:
+
             temp= eval(phenotype)
+
         except:
             temp=0
 

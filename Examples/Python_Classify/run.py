@@ -17,12 +17,12 @@ def runPhenotype(phenotype):
     return score
 
 def prossesIndividue(ind,i,lenPopulation):
-    print(ind.genotype)
+    #print(ind.genotype)
     print(ind.phenotype)
     if ind.phenotype.count("<") == 0:
-        ind.fitness_score=runPhenotype(ind.phenotype)
+        ind.fitness_score= runPhenotype(ind.phenotype)
     else:
-        ind.fitness_score=0
+        ind.fitness_score= 0
 
     porcentProgress = int(int(i) * 100 / int(lenPopulation))
     print(str(i) + "/" + str(lenPopulation) + " ->" + str(porcentProgress) + "% ->" + "Result_exect_Score: " + str(
@@ -30,15 +30,15 @@ def prossesIndividue(ind,i,lenPopulation):
     print("----------------------------------------------------------------------------------------------------------")
     return ind
 def createPhenotypes():
-    pop = Population(numberIndividuals=10, individualSize=20)
+    pop = Population(numberIndividuals=6, individualSize=15)
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", gen=5, initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,4,porcent=0.2)
-
-    inds=sorted(evolvedPop,key=lambda ind: ind.fitness_score, reverse=True)
+    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,4,porcent=0.4)
+    inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))
+    inds=sorted(inds,key=lambda ind: ind.fitness_score, reverse=True)
     print("")
     print("Top mejores 20:")
-    for ind in inds[0:20] :
+    for ind in inds[0:20]:
         print(ind.genotype)
         print(ind.phenotype)
         print(ind.fitness_score)
