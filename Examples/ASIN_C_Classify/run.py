@@ -11,13 +11,19 @@ import time
 import shutil
 import subprocess
 
-def runPhenotype(penotype,n,lenPopulation):
+def runPhenotype(penotype):
     #define sistem
     system = platform.system()
     pathAnterior=os.getcwd()
     #path="Experiments/TestCompiler_ASIN_C/"
     #os.chdir(path)
+    files=os.listdir('Build//')
+    files=list(map(lambda file: int(file.replace("_out.txt","")),list(filter(lambda file: file.count("_out.txt"), files))))
+    if len(files)>0:
+        n=max(files)+1
 
+    else:
+        n=0
     fileName = ""+str(n)
     #File Creator
 
@@ -55,8 +61,10 @@ def runPhenotype(penotype,n,lenPopulation):
     except:
         print("score did not dump in "+"Build//"+fileName+"_out.txt")
     score=int(result)
-    porcentProgress=int(int(fileName)*100/int(lenPopulation))
-    print(fileName + "/"+str(lenPopulation)+" ->"+str(porcentProgress)+"% ->"+"Result_exect_Score: " + str(score))
+    #porcentProgress=int(int(fileName)*100/int(lenPopulation))
+    #print(fileName + "/"+str(lenPopulation)+" ->"+str(porcentProgress)+"% ->"+"Result_exect_Score: " + str(score))
+    print("File:"+fileName +" Score:" + str(
+        score))
     file = open("Build//"+fileName+"_out.txt", 'w')
     file.write(str(score))
     file.close()
@@ -105,14 +113,19 @@ def preparateExperiment():
     destino = "Build//GEClassify.exe"
     shutil.copyfile(fuente, destino)
 
-def prossesIndividue(ind,i,lenPopulation):
+def prossesIndividue(ind):
     print(ind.genotype)
     print(ind.phenotype)
     if str(ind.phenotype).count("<")==0 and str(ind.phenotype).count(">")==0:
-        score=runPhenotype(ind.phenotype,i,lenPopulation)
-        if type(score) is int:
-            ind.fitness_score=score
-        else:
+        try:
+            score=runPhenotype(ind.phenotype)
+
+            if type(score) is int:
+                ind.fitness_score=score
+            else:
+                ind.fitness_score = 0
+        except:
+            print("Error de formato de phenotype  en forma de tupla")
             ind.fitness_score = 0
     else:
         ind.fitness_score = 0
@@ -121,10 +134,10 @@ def prossesIndividue(ind,i,lenPopulation):
     return ind
 def createPhenotypes():
     preparateExperiment()
-    pop = Population(numberIndividuals=10, individualSize=20)
+    pop = Population(numberIndividuals=100, individualSize=20)
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", gen=5, initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_1(population, prossesIndividue,4)
+    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,4,porcent=0.2)
     lenPopulation=len(evolvedPop)
     #General_functions.async_map_g((lambda ind: prossesIndividue(ind[1],ind[0],lenPopulation)), enumerate(evolvedPop))
     #for ind in evolvedPop:

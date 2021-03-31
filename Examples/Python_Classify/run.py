@@ -21,9 +21,9 @@ def prossesIndividue(ind):
 
     if ind.phenotype.count("<") == 0:
         ind.fitness_score= runPhenotype(ind.phenotype)
-        if ind.fitness_score>0:
-            print(ind.phenotype)
-            print(ind.fitness_score)
+        #if ind.fitness_score>0:
+        print(ind.phenotype)
+        print(ind.fitness_score)
     else:
         ind.fitness_score= 0
 
@@ -35,8 +35,10 @@ def prossesIndividue(ind):
 def createPhenotypes():
     pop = Population(numberIndividuals=6, individualSize=25)
     population = pop.generatePop()
-    algo = Algorithms("grammar.bnf", gen=4, initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,4,porcent=0.4)
+    algo = Algorithms("grammar.bnf", gen=3, initBNF=1, debug=False)
+    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,4,porcent=0.2)
+
+
     inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))
     inds=sorted(inds,key=lambda ind: ind.fitness_score, reverse=True)
     print("")

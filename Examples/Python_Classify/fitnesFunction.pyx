@@ -1,8 +1,7 @@
 from math import sin,cos,log
 
 import numpy as np
-FitnessCases=40
-Variables=6
+
 
 #dim=np.loadtxt("SampleData.txt",dtype=float)
 def assignFitness(evolved,dim):
