@@ -1,8 +1,8 @@
-from utils_.cythonFunctions import compileAll
-compileAll.compiler()
-from utils_.search_operators import compileAll
-compileAll.compiler()
-from Examples.Python_Classify import compileAll
+#from utils_.cythonFunctions import compileAll
+#compileAll.compiler()
+#from utils_.search_operators import compileAll
+#compileAll.compiler()
+from Examples.Python_PrimesN import compileAll
 compileAll.compiler()
 
 
@@ -12,18 +12,22 @@ import os
 import time
 import shutil
 import numpy as np
-import Examples.Python_Classify.fitnesFunction as ff
+import Examples.Python_PrimesN.fitnesFunction as ff
 
 
 
-def prossesIndividue(ind, debug=False):
+def prossesIndividue(ind, debug=True):
     #print(ind.genotype)
 
     if ind.phenotype.count("<") == 0:
         dim = np.loadtxt("SampleData.txt", dtype=float)
-        ind.fitness_score= ff.fitnesFunction(ind.phenotype,dim)
+        score= ff.fitnesFunction(ind.phenotype,dim)
         #if ind.fitness_score>0:
-
+        if ind.fitness_score==-1:
+            #time.sleep(10)
+            print("Error raro -1")
+        else:
+            ind.fitness_score=score
     else:
         ind.fitness_score= 0
     if debug:
@@ -36,10 +40,10 @@ def prossesIndividue(ind, debug=False):
         print("----------------------------------------------------------------------------------------------------------")
     return ind.fitness_score
 def createPhenotypes():
-    pop = Population(numberIndividuals=10, individualSize=20)
+    pop = Population(numberIndividuals=100, individualSize=20)
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,gen=6,porcentSelect=0.2,estaticSelect=50)
+    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,gen=6,porcentSelect=0.2,estaticSelect=100)
 
 
     inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))

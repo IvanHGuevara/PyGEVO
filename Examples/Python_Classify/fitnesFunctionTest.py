@@ -1,4 +1,4 @@
-from math import sin,cos,tan,log
+from math import sin,cos,log
 
 import numpy as np
 
@@ -36,7 +36,7 @@ def mymul(a1,a2):
 def fitnesFunction(phenotype,dim):
     evolved = np.zeros(len(dim), dtype=float)
     for i in range(0,len(dim)):
-
+        print(dim[i][5])
         try:
 
             temp= eval(phenotype.lower())
@@ -54,6 +54,6 @@ def fitnesFunction(phenotype,dim):
     return assignFitness(evolved,dim)
 
 
-#dim = np.loadtxt("SampleData.txt", dtype=float)
-#num=fitnesFunction("cos(log(Dim[5][i]))",dim) #score=16
-#print(num)
+dim = np.loadtxt("SampleData.txt", dtype=float)
+num=fitnesFunction("cos(log(Dim[i][5]))",dim) #score=16
+print(num)

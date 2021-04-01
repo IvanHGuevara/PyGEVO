@@ -1,4 +1,4 @@
-from math import sin,cos,tan,log
+from math import sin,cos,log,tan,factorial
 
 import numpy as np
 
@@ -34,24 +34,26 @@ def mymul(a1,a2):
 
 
 def fitnesFunction(phenotype,dim):
-    evolved = np.zeros(len(dim), dtype=float)
+
+    puntaje=0
+
     for i in range(0,len(dim)):
 
         try:
-
+            i=i+1
             temp= eval(phenotype.lower())
 
+            i=i-1
+            if temp == dim[i]:
+                puntaje = puntaje + 1
         except:
-            temp=0
 
-        if temp < 0 and dim[i][-1] == 0:
-            evolved[i]=1
-        elif temp > 0 and dim[i][-1] == 1:
-            evolved[i]=1
+            print(phenotype.lower())
+            print(str(i+1))
 
-        else:
-            evolved[i]=0
-    return assignFitness(evolved,dim)
+
+
+    return puntaje
 
 
 #dim = np.loadtxt("SampleData.txt", dtype=float)

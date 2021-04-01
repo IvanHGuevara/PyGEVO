@@ -6,8 +6,12 @@ import copy
 class GA:
 
     @staticmethod
-    def select(individuals, porcent=0.5, f_to_int=(lambda x: len(x.genotype)),reverse=False):
-        n=math.trunc(len(individuals)*porcent)
+    def select(individuals, porcent=0.5,estaticSelect=0, f_to_int=(lambda x: len(x.genotype)),reverse=False):
+        if estaticSelect<=0:
+            n=math.trunc(len(individuals)*porcent)
+        else:
+            n=estaticSelect
+
         return sorted(individuals, key=f_to_int, reverse=reverse)[:n]
 
     @staticmethod
@@ -21,6 +25,7 @@ class GA:
         size=len(indG.genotype)
         point = random.randint(1, size - 1)
         indG.genotype[point]=random.randint(0, 256)
+
         return indG
 
     @staticmethod
@@ -32,6 +37,7 @@ class GA:
     @staticmethod
     def crossoverInds(ind1,ind2,point):
         ind1.genotype[point:], ind2.genotype[point:] = ind2.genotype[point:], ind1.genotype[point:]
+
         return ind1, ind2
 
     @staticmethod

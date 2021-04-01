@@ -129,15 +129,15 @@ def prossesIndividue(ind):
             ind.fitness_score = 0
     else:
         ind.fitness_score = 0
-    #print(ind.fitness_score)
+    print(ind.fitness_score)
     print("----------------------------------------------------------------------------------------------------------")
     return ind
 def createPhenotypes():
     preparateExperiment()
-    pop = Population(numberIndividuals=100, individualSize=20)
+    pop = Population(numberIndividuals=10, individualSize=20)
     population = pop.generatePop()
-    algo = Algorithms("grammar.bnf", gen=5, initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,4,porcent=0.2)
+    algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
+    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,6,porcentSelect=0.2,estaticSelect=50)
     lenPopulation=len(evolvedPop)
     #General_functions.async_map_g((lambda ind: prossesIndividue(ind[1],ind[0],lenPopulation)), enumerate(evolvedPop))
     #for ind in evolvedPop:
