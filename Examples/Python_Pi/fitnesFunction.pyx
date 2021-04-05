@@ -36,7 +36,7 @@ def mymul(a1,a2):
 def fitnesFunction(phenotype,dim):
 
     puntaje=0
-    print(phenotype)
+    #print(phenotype)
     temp=0
     #for i in range(0,len(dim)-1):
     for i in range(0,100):
@@ -54,8 +54,8 @@ def fitnesFunction(phenotype,dim):
             #print(phenotype.lower())
             #print(str(i+1))
 
-    puntaje=1/fabs(pi-temp)
-    print("puntaje:" +str(puntaje)+" solution="+str(temp))
+    puntaje=fabs(pi-temp)
+    #print("puntaje:" +str(puntaje)+" solution="+str(temp))
     return puntaje
 
 #"pdiv(pdiv(myadd(i, mymul(i, cos(cos(i)))), factorial(i)), i)"

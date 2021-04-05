@@ -28,7 +28,7 @@ class Algorithms:
                 ind.phenotype = evolvedIndividuals[idx]
         return population
 
-    def evolveWithGE_FitnesFunction(self, population,fitness_function, gen = 1, initBNF=1,porcentSelect=0.5,estaticSelect=0,fileSave=""):
+    def evolveWithGE_FitnesFunction(self, population,fitness_function, gen = 1, initBNF=1,porcentSelect=0.5,estaticSelect=0,fileSave="",reverse=True):
         self.gen=gen
         evolvedIndividuals = []
 
@@ -55,14 +55,14 @@ class Algorithms:
                 f.close()
                 #save(fileSave+'.npy', population,allow_pickle=True)
 
-            individualBatch = list(map(lambda indG: GA.mutateInd(indG), individualBatch))
+            individualBatch = list(General_functions.async_map_g(lambda indG: GA.mutateInd(indG), individualBatch))
             print("generating crossover.......")
             individualBatch = GA.crossover(individualBatch, self)
             newPopulation = np.concatenate((individualBatch, population))
             print("reevaluate new population")
-            newPopulation = list(map(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
+            newPopulation = list(General_functions.async_map_g(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
             #individualBatch = sorted(enumerate(individualBatch), key= lambda ind: (fitness_function(ind[1],ind[0]+1,len(individualBatch)).fitness_score,len(ind[1].phenotype)), reverse=True)
-            newPopulation = sorted(newPopulation, key=lambda ind: (ind.fitness_score,len(ind.phenotype)), reverse=True)
+            newPopulation = sorted(newPopulation, key=lambda ind: (ind.fitness_score,len(ind.phenotype)), reverse=reverse)
             print("Top mejores 10:")
             for ind in newPopulation[0:9]:
                 print(ind.genotype)
