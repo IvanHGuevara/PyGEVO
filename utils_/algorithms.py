@@ -5,6 +5,11 @@ from utils_.general_functions import General_functions
 from .search_operators.ga import GA
 from .fitness_functions.fitness_functions import FitnessFunctions
 import numpy as np
+from numpy import load
+from numpy import save
+from pathlib import Path
+import pickle
+
 
 class Algorithms:
 
@@ -23,11 +28,12 @@ class Algorithms:
                 ind.phenotype = evolvedIndividuals[idx]
         return population
 
-    def evolveWithGE_FitnesFunction(self, population,fitness_function, gen = 1, initBNF=1,porcentSelect=0.5,estaticSelect=0):
+    def evolveWithGE_FitnesFunction(self, population,fitness_function, gen = 1, initBNF=1,porcentSelect=0.5,estaticSelect=0,fileSave=""):
         self.gen=gen
         evolvedIndividuals = []
 
         for generationNumber in range(gen):
+
             print("Generation: ", generationNumber)
             print("===================================================================")
 
@@ -41,6 +47,14 @@ class Algorithms:
             individualBatch = GA.select(evolvedIndividuals,porcentSelect,estaticSelect)
             print("Grabbing a batch of: ", len(individualBatch))
             print("mutating individuals.......")
+            #sabe population
+            if fileSave != "":
+
+                f=open(fileSave+'.txt', 'wb')
+                f.write(pickle.dumps(population))
+                f.close()
+                #save(fileSave+'.npy', population,allow_pickle=True)
+
             individualBatch = list(map(lambda indG: GA.mutateInd(indG), individualBatch))
             print("generating crossover.......")
             individualBatch = GA.crossover(individualBatch, self)
@@ -48,7 +62,12 @@ class Algorithms:
             print("reevaluate new population")
             newPopulation = list(map(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
             #individualBatch = sorted(enumerate(individualBatch), key= lambda ind: (fitness_function(ind[1],ind[0]+1,len(individualBatch)).fitness_score,len(ind[1].phenotype)), reverse=True)
-            newPopulation = sorted(newPopulation, key=lambda ind: ind.fitness_score, reverse=True)
+            newPopulation = sorted(newPopulation, key=lambda ind: (ind.fitness_score,len(ind.phenotype)), reverse=True)
+            print("Top mejores 10:")
+            for ind in newPopulation[0:9]:
+                print(ind.genotype)
+                print(ind.phenotype)
+                print(ind.fitness_score)
 
             print("===================================================================")
             population = newPopulation

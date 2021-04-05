@@ -36,23 +36,25 @@ def mymul(a1,a2):
 def fitnesFunction(phenotype,dim):
 
     puntaje=0
+    print(phenotype)
 
     for i in range(0,len(dim)):
 
         try:
-            i=i+1
+
             temp= eval(phenotype.lower())
 
-            i=i-1
+
             if temp == dim[i]:
                 puntaje = puntaje + 1
         except:
+            puntaje=0
+            return puntaje
+            #print(phenotype.lower())
+            #print(str(i+1))
 
-            print(phenotype.lower())
-            print(str(i+1))
 
-
-
+    print(puntaje)
     return puntaje
 
 
