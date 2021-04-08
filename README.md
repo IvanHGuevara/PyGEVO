@@ -1,3 +1,26 @@
-# PyGE: a Grammatical Evolution pythonic framework
+# PyGE: a pythonic Grammatical Evolution framework
 
-PyGE is a pythonic low-code framework for Grammatical Evolution. Its main feature is to be minimalistic but powerful at the same time.
+PyGE is a pythonic low-code framework for Grammatical Evolution. Minimalistic, efficient and powerful, this framework aims to enable non-expert users to easily wrap up a GE experiment in a few lines of codes:
+
+```python
+from utils_.cythonFunctions.population import Population
+from utils_.algorithms import Algorithms
+from utils_.search_operators.ga import GA
+from utils_.fitness_functions.fitness_functions import FitnessFunctions
+
+pop = Population(numberIndividuals=6, individualSize=8)
+population = pop.generatePop()
+algo = Algorithms("grammar_ANSI_C.bnf",gen=5, initBNF=56,debug=False)
+evolvedPop = algo.evolveWithGE(population, FitnessFunctions.griewank, gen=30, porcentSelect=0.2, staticSelection=100)
+```
+
+Primary Authors
+===============
+
+* __[Ivan Hugo Guevara](https://github.com/AivanGuevara)__
+
+    PhD researcher at Confirm Centre@UL - MaTE.AI team member
+    
+* __[Lucas Agustin Gonzalez](https://github.com/mitya57)__
+
+    BI analyst at Biwares - MaTE.AI team member

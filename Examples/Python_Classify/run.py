@@ -35,10 +35,6 @@ def processIndividual(ind):
     if debug:
         print(ind.phenotype)
         print(ind.fitness_score)
-
-        #porcentProgress = int(int(i) * 100 / int(lenPopulation))
-        #print(str(i) + "/" + str(lenPopulation) + " ->" + str(porcentProgress) + "% ->" + "Result_exect_Score: " + str(
-        #    ind.fitness_score))
         print("----------------------------------------------------------------------------------------------------------")
     return ind.fitness_score
 
@@ -46,7 +42,7 @@ def createPhenotypes():
     pop = Population(numberIndividuals=10, individualSize=20)
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_FitnesFunction(population, processIndividual,gen=6,porcentSelect=0.2,estaticSelect=50)
+    evolvedPop = algo.evolveWithGE(population, processIndividual, gen=6, porcentSelect=0.2, staticSelection=50)
     inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))
     inds=sorted(inds,key=lambda ind: ind.fitness_score, reverse=True)
     print("")

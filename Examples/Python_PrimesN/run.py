@@ -42,7 +42,7 @@ def createPhenotypes():
     pop = Population(numberIndividuals=100, individualSize=20)
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,gen=30,porcentSelect=0.2,estaticSelect=100)
+    evolvedPop = algo.evolveWithGE(population, prossesIndividue,gen=30,porcentSelect=0.2, staticSelect=100)
 
 
     inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))

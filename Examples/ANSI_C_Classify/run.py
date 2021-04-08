@@ -115,7 +115,6 @@ def prepareExperiment():
     shutil.copy("GEClassify.h", "Build/GEClassify.h")
     shutil.copy("SampleData.txt", "Build/SampleData.txt")
 
-
 def processIndividual(ind):
     #We check if the phenotype is valid by checking if there is a < or a >
     try:
@@ -134,7 +133,7 @@ def createPhenotypes():
     pop = Population(numberIndividuals=100, individualSize=8)
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_1(population, processIndividual, 4)
+    evolvedPop = algo.evolveWithGE(population, processIndividual, gen=4, porcentSelect=0.2, staticSelection=50)
     inds=list(filter((lambda ind: ind.isValid()), evolvedPop))
     inds=sorted(inds,
            key=lambda ind: ind.fitness_score, reverse=True)
