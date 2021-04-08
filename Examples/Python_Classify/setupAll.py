@@ -7,7 +7,7 @@ pyximport.install(setup_args={"script_args":["--compiler=msvc"]}, reload_support
 
 setup(
       name = "fitnesFunction",
-      ext_modules = cythonize('fitnesFunction.pyx',language_level = "3", annotate=True)
+      ext_modules = cythonize('FitnessFunction.pyx',language_level = "3", annotate=True)
 )
 
 #setup(

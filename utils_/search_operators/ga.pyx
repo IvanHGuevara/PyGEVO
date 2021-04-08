@@ -11,7 +11,6 @@ class GA:
             n=math.trunc(len(individuals)*porcent)
         else:
             n=estaticSelect
-
         return sorted(individuals, key=f_to_int, reverse=reverse)[:n]
 
     @staticmethod
@@ -25,7 +24,6 @@ class GA:
         size=len(indG.genotype)
         point = random.randint(1, size - 1)
         indG.genotype[point]=random.randint(0, 256)
-
         return indG
 
     @staticmethod
@@ -37,26 +35,20 @@ class GA:
     @staticmethod
     def crossoverInds(ind1,ind2,point):
         ind1.genotype[point:], ind2.genotype[point:] = ind2.genotype[point:], ind1.genotype[point:]
-
         return ind1, ind2
 
     @staticmethod
-    def crossover(individuals, algorithms):
-        g = list(ind for ind in individuals)
+    def crossover(individuals):
         gs=[]
+        g = list(ind for ind in individuals)
         point = random.randint(1, len(g[0].genotype) - 1)
-        g1=g.copy()
-        for ind1 in g1:
-            g2=g.copy()
-            g2.remove(ind1)
-            for ind2 in g2:
-                ind1New=copy.deepcopy(ind1)
-                ind2New = copy.deepcopy(ind2)
-                i1,i2=GA.crossoverInds(ind1New,ind2New,point)
-                if i1 not in gs:
-                    gs.append(i1)
-                if i2 not in gs:
-                    gs.append(i2)
+        for ind1,ind2 in zip(g[0::2], g[1::2]):
+            ind1New=copy.deepcopy(ind1)
+            ind2New = copy.deepcopy(ind2)
+            i1,i2=GA.crossoverInds(ind1New,ind2New,point)
+            if i1 not in gs:
+                gs.append(i1)
+            if i2 not in gs:
+                gs.append(i2)
         gs_a=np.array(gs)
-        individuals = algorithms.evolveWithGE(gs_a)
-        return individuals
+        return gs_a

@@ -38,24 +38,16 @@ def fitnesFunction(phenotype,dim):
     puntaje=0
     #print(phenotype)
     temp=0
-    #for i in range(0,len(dim)-1):
     for i in range(0,100):
         try:
-
             calc= temp+eval(phenotype.lower())
             if (pi-temp) >= (pi-calc) :
                 temp=calc
-                #print("i:"+str(i)+"-> "+str(temp))
-
-            #print(temp)
         except:
-
             return 0
-            #print(phenotype.lower())
-            #print(str(i+1))
-
-    puntaje=fabs(pi-temp)
-    #print("puntaje:" +str(puntaje)+" solution="+str(temp))
+    if pi == temp:
+        return 9999999999999999999
+    puntaje=1/fabs(pi-temp)
     return puntaje
 
 #"pdiv(pdiv(myadd(i, mymul(i, cos(cos(i)))), factorial(i)), i)"

@@ -6,19 +6,25 @@ from Examples.Python_Classify import compileAll
 compileAll.compiler()
 
 
+#from utils_.cythonFunctions import compileAll
+#compileAll.compiler()
+#from Python_Classify import compileAll
+#compileAll.compiler()
+import pyximport
+pyximport.install()
+import numpy as np
+from FitnessFunction import FitnessFunction
+import sys
+sys.path.append('../../')
 from utils_.cythonFunctions.population import Population
 from utils_.algorithms import Algorithms
-import os
-import time
-import shutil
-import numpy as np
-import Examples.Python_Classify.fitnesFunction as ff
 
+def runPhenotype(phenotype):
+    dim=np.loadtxt("SampleData.txt",dtype=float)
+    score=FitnessFunction(phenotype,dim)
+    return score
 
-
-def prossesIndividue(ind, debug=False):
-    #print(ind.genotype)
-
+def processIndividual(ind):
     if ind.phenotype.count("<") == 0:
         dim = np.loadtxt("SampleData.txt", dtype=float)
         ind.fitness_score= ff.fitnesFunction(ind.phenotype,dim)
@@ -35,13 +41,12 @@ def prossesIndividue(ind, debug=False):
         #    ind.fitness_score))
         print("----------------------------------------------------------------------------------------------------------")
     return ind.fitness_score
+
 def createPhenotypes():
     pop = Population(numberIndividuals=10, individualSize=20)
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE_FitnesFunction(population, prossesIndividue,gen=6,porcentSelect=0.2,estaticSelect=50)
-
-
+    evolvedPop = algo.evolveWithGE_FitnesFunction(population, processIndividual,gen=6,porcentSelect=0.2,estaticSelect=50)
     inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))
     inds=sorted(inds,key=lambda ind: ind.fitness_score, reverse=True)
     print("")
