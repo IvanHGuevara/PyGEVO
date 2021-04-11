@@ -1,9 +1,11 @@
-from utils_.cythonFunctions import compileAll
-compileAll.compiler()
-from utils_.search_operators import compileAll
-compileAll.compiler()
-from Examples.Python_Classify import compileAll
-compileAll.compiler()
+#from .Python_Classify import compileAll
+#compileAll.compiler()
+#import sys
+#sys.path.append('../../')
+#from utils_.cythonFunctions import compileAll
+#compileAll.compiler()
+#from utils_.search_operators import compileAll
+#compileAll.compiler()
 
 
 #from utils_.cythonFunctions import compileAll
@@ -12,8 +14,8 @@ compileAll.compiler()
 #compileAll.compiler()
 import pyximport
 pyximport.install()
-import numpy as np
 from FitnessFunction import FitnessFunction
+import numpy as np
 import sys
 sys.path.append('../../')
 from utils_.cythonFunctions.population import Population
@@ -24,10 +26,10 @@ def runPhenotype(phenotype):
     score=FitnessFunction(phenotype,dim)
     return score
 
-def processIndividual(ind):
+def processIndividual(ind, debug = False):
     if ind.phenotype.count("<") == 0:
         dim = np.loadtxt("SampleData.txt", dtype=float)
-        ind.fitness_score= ff.fitnesFunction(ind.phenotype,dim)
+        ind.fitness_score= FitnessFunction(ind.phenotype,dim)
         #if ind.fitness_score>0:
 
     else:
