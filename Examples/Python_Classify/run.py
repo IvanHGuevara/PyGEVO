@@ -1,5 +1,8 @@
-import compileAll
-compileAll.compiler()
+from compiler import Compiler
+comp=Compiler()
+comp.enableCython()
+comp.compile()
+
 import pyximport
 pyximport.install()
 from FitnessFunction import FitnessFunction

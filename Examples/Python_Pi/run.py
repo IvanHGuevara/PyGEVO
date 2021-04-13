@@ -1,9 +1,12 @@
-import compileAll
-compileAll.compiler()
+from compiler import Compiler
+comp=Compiler()
+#comp.enableCython()
+comp.compile()
+import sys
 import Examples.Python_Pi.fitnesFunction as ff
 from utils_.cythonFunctions.population import Population
 from utils_.algorithms import Algorithms
-
+from utils_.search_operators.ga import GA
 from pathlib import Path
 import pickle
 
@@ -34,19 +37,30 @@ def createPhenotypes():
     fileSave="data_1"
     fileObj = Path(fileSave + '.txt')
     if fileObj.is_file():
-        f=open(fileSave + '.txt', 'rb')
-        population=pickle.loads(f.read())
-        f.close()
+        try:
+            f=open(fileSave + '.txt', 'rb')
+
+            population=pickle.loads(f.read())
+            f.close()
+        except:
+            f.close()
+            sys.exit()
         #print(pop[0].phenotype)
         #pop = load(fileSave + '.txt',allow_pickle=True)
-        #population = sorted(population, key=lambda ind: (ind.fitness_score, len(ind.phenotype)), reverse=True)
-        #population = GA.select(population, 0.05, 10000)
+        evolvedIndividuals=[]
+
+        #for ind in population:
+
+        #    evolvedIndividuals.append(ind)
+        #population=evolvedIndividuals
+        population = sorted(population, key=lambda ind: (ind.fitness_score), reverse=False)
+        population = GA.select(population, 0.05, 10000)
     else:
         pop = Population(numberIndividuals=25, individualSize=18)
         population = pop.generatePop()
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
 
-    evolvedPop = algo.evolveWithGE(population, prossesIndividue,gen=1000,porcentSelect=0.04,fileSave=fileSave,reverse=False,debug=True,)#,staticSelection=200
+    evolvedPop = algo.evolveWithGE(population, prossesIndividue,gen=1000,porcentSelect=0.1,fileSave=fileSave,reverse=False,debug=True)#,staticSelection=200
 
 
     #inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))

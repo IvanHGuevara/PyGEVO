@@ -1,5 +1,8 @@
-import compileAll
-compileAll.compiler()
+from compiler import Compiler
+comp=Compiler()
+comp.enableCython()
+comp.compile()
+
 from Examples.Python_PrimesN import compileAll
 compileAll.compiler()
 
