@@ -6,5 +6,4 @@ class Individual:
         self.phenotype = None
 
     def isValid(self):
-        #check if the phenotype contains parts from the BNF
-        pass
+        return (self.phenotype.count("<") == 0) and (self.phenotype.count(">") == 0)

@@ -14,12 +14,6 @@ class Population:
     #    General_functions.async_map(lambda _: self.generateIndividual(), range(self.numberIndividuals))
     #    return self.pop
 
-    #async def generateIndividual(self):
-    #    ind = []
-    #    for _ in range(self.individualSize):
-    #         ind.append(randint(1,255))
-    #    self.pop.append(ind)
-
     def generatePop(self):
         individuals = []
         self.pop = np.random.randint(255, size=(self.numberIndividuals,self.individualSize))
