@@ -1,47 +1,46 @@
+import sys
+sys.path.append("../../")
 from subprocess import call
 import os
 import glob
-from os import remove,rename,rmdir
+from os import remove,rename
 import shutil
+import platform
+
 class Compiler:
-    def __init__(self) -> None:
-        self.enableCythonBool =False
-    def compile(self):
-        if self.enableCythonBool:
+
+    cythonEnabled = False
+
+    @classmethod
+    def compile(cls):
+        system = platform.system()
+        if cls.cythonEnabled:
             path = os.getcwd().split("PyGE")[0]+"PyGE//"
-            print(path)
             files = []
             dist = ""
-            for i in range(0, 5):
+            for _ in range(0, 5):
                 targetPattern = path + "//" + dist + "*.py"
                 files = files + glob.glob(targetPattern)
                 dist = dist + "**//"
-
             for file in files:
                 print("Rename:", end="")
                 print(file)
-
                 pathAnterior = os.getcwd()
-
-                name = file.split("\\")[-1]
-                print(name)
+                if system=="Windows":
+                    name = file.split("\\")[-1]
+                else:
+                    name = file.split("/")[-1]
                 if name not in ["compiler.py","setupAll.py","run.py"]:
-
                     simpleName = name.replace(".py", "")
                     path = file.replace(name, "")
                     os.chdir(path)
                     rename(name,simpleName+".pyx")
-                    # remove(simpleName+".c")
-                    # remove(simpleName + ".**.pyd")
-                    # remove(simpleName + ".html")
                     os.chdir(pathAnterior)
-                    print(
-                        "-------------------------------------------------------------------------------------------------------------")
             #setupAll
             pathAnterior=os.getcwd()
             path=pathAnterior.split("PyGE")[0]+"PyGE//"
             os.chdir(path)
-            call("python setupAll.py build_ext --inplace")
+            call("python setupAll.py build_ext")
             os.chdir(pathAnterior)
 
         else:
@@ -90,8 +89,9 @@ class Compiler:
                 print(
                     "-------------------------------------------------------------------------------------------------------------")
 
-    def enableCython(self):
-        self.enableCythonBool=True
+    @classmethod
+    def enableCython(cls):
+        cls.cythonEnabled=True
 
 #comp=Compiler()
 #comp.enableCython()

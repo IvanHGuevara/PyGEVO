@@ -4,7 +4,7 @@ comp=Compiler()
 comp.compile()
 import sys
 import Examples.Python_Pi.fitnesFunction as ff
-from utils_.cythonFunctions.population import Population
+from utils_.domain_objects.population import Population
 from utils_.algorithms import Algorithms
 from utils_.search_operators.ga import GA
 from pathlib import Path

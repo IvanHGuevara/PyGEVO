@@ -2,7 +2,7 @@ from grammarContainer import GrammarContainer
 import sys
 sys.path.append('../')
 from utils_.grammarWrapper import GrammarWrapper
-from utils_.cythonFunctions.mapper import Mapper
+from utils_.domain_objects.mapper import Mapper
 
 
 def initialise_test():

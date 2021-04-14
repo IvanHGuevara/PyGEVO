@@ -21,8 +21,6 @@ class Mapper:
                 self.mBNF[idx][productionRules.index(production)]=1
 
     def mapBNF(self,codons,start = 1,debug = False):
-        #cdef int i
-        #cdef str search
         i = start
         for codon in codons:
             cDefinitions = len(self.grammar.getProductionRulesForPosition(i))
@@ -48,6 +46,5 @@ class Mapper:
                         codons=np.random.randint(255, size=(0))
                 else:
                     return xDefinition,len(codons[1:])
-
             return xDefinition,0
 

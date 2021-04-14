@@ -3,7 +3,7 @@
 PyGE is a pythonic low-code framework for Grammatical Evolution. Minimalistic, efficient and powerful, this framework aims to enable non-expert users to easily wrap up a GE experiment in a few lines of codes:
 
 ```python
-from utils_.cythonFunctions.population import Population
+from utils_.domain_objects.population import Population
 from utils_.algorithms import Algorithms
 from utils_.search_operators.ga import GA
 from utils_.fitness_functions.fitness_functions import FitnessFunctions

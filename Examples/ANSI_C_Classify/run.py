@@ -1,15 +1,13 @@
-from compiler import Compiler
-comp=Compiler()
-comp.enableCython()
-comp.compile()
-
 import sys
 sys.path.append('../../')
+from compiler import Compiler
+Compiler.enableCython()
+Compiler.compile()
 
 import pyximport
 pyximport.install()
 
-from utils_.cythonFunctions.population import Population
+from utils_.domain_objects.population import Population
 from utils_.algorithms import Algorithms
 
 import os
@@ -36,8 +34,8 @@ def runPhenotype(phenotype):
     list1 = open(file1, 'r')
     list2 = open(file2, 'r')
     file = open("Build//"+fileName+".c", 'w')
-    datos = list1.read() +str(phenotype)+list2.read()
-    file.write(datos)
+    fileData = list1.read() +str(phenotype)+list2.read()
+    file.write(fileData)
     file.close()
 
     fileLib = "GEClassify"
@@ -137,12 +135,11 @@ def createPhenotypes():
     population = pop.generatePop()
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
     evolvedPop = algo.evolveWithGE(population, processIndividual, gen=4, porcentSelect=0.2, staticSelection=50)
-    inds=list(filter((lambda ind: ind.isValid()), evolvedPop))
-    inds=sorted(inds,
-           key=lambda ind: ind.fitness_score, reverse=True)
+    evolvedPop = evolvedPop.getValidIndividuals()
+    evolvedPop = evolvedPop.getIndividualsOrderedByFitness()
     print("")
-    print("Top mejores 20:")
-    for ind in inds[0:20] :
+    print("Top best 20:")
+    for ind in evolvedPop[0:20] :
         print(ind.genotype)
         print(ind.phenotype)
         print(ind.fitness_score)

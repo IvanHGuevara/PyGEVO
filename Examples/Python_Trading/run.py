@@ -6,7 +6,7 @@ comp.compile()
 import sys
 sys.path.append('../../')
 
-from utils_.cythonFunctions.population import Population
+from utils_.domain_objects.population import Population
 from utils_.algorithms import Algorithms
 import os
 import time

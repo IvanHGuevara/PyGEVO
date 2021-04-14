@@ -1,9 +1,10 @@
-from utils_.cythonFunctions.mapper import Mapper
-#from utils_.mapper import Mapper
+from compiler import Compiler
+if Compiler.cythonEnabled:
+    import pyximport
+    pyximport.install()
+from utils_.domain_objects.mapper import Mapper
 from utils_.grammarWrapper import GrammarWrapper
 from utils_.general_functions import General_functions
-import pyximport
-pyximport.install()
 from .search_operators.ga import GA
 from .fitness_functions.fitness_functions import FitnessFunctions
 import numpy as np
@@ -15,13 +16,12 @@ import pickle
 
 class Algorithms:
 
-    def __init__(self, grammarPath, initBNF=1,debug=False) -> None:
+    def __init__(self, grammarPath, initBNF=1, debug=False) -> None:
         self.mapper = Mapper(GrammarWrapper.createFromFile(grammarPath))
         self.mapper.toMatrixBNF()
         self.initBNF=initBNF
         self.debug=debug
         self.gen=0
-
 
     def asyncEvolveWithGE(self, population):
         for _ in range(self.gen):
@@ -36,7 +36,7 @@ class Algorithms:
         for generationNumber in range(gen):
             print("Generation: ", generationNumber)
             print("===================================================================")
-            for ind in population:
+            for ind in population.pop:
                 ind.phenotype=self.mapper.mapBNF(ind.genotype, initBNF - 1)[0]
                 evolvedIndividuals.append(ind)
             if staticSelection<=0:
@@ -54,17 +54,17 @@ class Algorithms:
             individualBatch = list(General_functions.async_map_g(lambda indG: GA.mutateInd(indG), individualBatch))
             print("generating crossover.......")
             individualBatch = GA.crossover(individualBatch)
-            newPopulation = np.concatenate((individualBatch, population))
+            newPopulation = np.concatenate((individualBatch, population.pop))
             print("reevaluate new population")
             newPopulation = list(General_functions.async_map_g(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
             newPopulation = sorted(newPopulation, key=lambda ind: (ind.fitness_score,len(ind.phenotype)), reverse=reverse)
-            population = newPopulation
-
-            if debug:
-                print("Top 10:")
-                for ind in population[0:9]:
-                    print(ind.genotype)
-                    print(ind.phenotype)
-                    print(ind.fitness_score)
-                    print("========================================================================================================")
+            population.pop = newPopulation
         return population
+
+    def showTopTen(population):
+        print("Top ten:")
+        for ind in population[0:9]:
+            print(ind.genotype)
+            print(ind.phenotype)
+            print(ind.fitness_score)
+            print("========================================================================================================")

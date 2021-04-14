@@ -8,9 +8,6 @@ import Cython.Compiler.Options
 Cython.Compiler.Options.annotate = False #html
 pyximport.install(setup_args={"script_args":["--compiler=msvc"]}, reload_support=True)
 
-
-
-
 path=os.getcwd()
 print(path)
 files=[]
@@ -31,8 +28,5 @@ for file in files:
     path=file.replace(name,"")
     os.chdir(path)
     setup(name=simpleName,ext_modules=cythonize(name, language_level="3", annotate=False))
-    #remove(simpleName+".c")
-    #remove(simpleName + ".**.pyd")
-    #remove(simpleName + ".html")
     os.chdir(pathAnterior)
     print("-------------------------------------------------------------------------------------------------------------")
