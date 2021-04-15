@@ -1,5 +1,5 @@
 import sys
-from .grammarContainer import GrammarContainer
+from grammarContainer import GrammarContainer
 sys.path.append('../')
 from utils_.grammarWrapper import GrammarWrapper
 
@@ -8,7 +8,7 @@ def initialise_test():
 
 def test_grammarMethods():
     grammar = initialise_test()
-    assert(grammar.getVWords()) == ['<inicio>', '<sig>', '<matiz>']
-    assert(grammar.getProductionRules()) == ['izquierda <sig>', 'derecha <sig>', 'adelantar <matiz>', 'atras <matiz>', 'adelantar <inicio>', 'atras <inicio>', '<sig>', '<EOF>', 'golpear', 'agacharse', 'disparar', '<EOF>'] 
-    assert(grammar.getProductionRulesForPosition(0)) == ['izquierda <sig>', 'derecha <sig>']
+    assert(grammar.getVWords()) == ['<begin>', '<next>', '<action>']
+    assert(grammar.getProductionRules()) == ['left <next>', 'right <next>', 'forward <action>', 'back <action>', 'forward <begin>', 'back <begin>', '<next>', '<EOF>', 'hit', 'down', 'shoot', '<EOF>'] 
+    assert(grammar.getProductionRulesForPosition(0)) == ['left <next>', 'right <next>']
 

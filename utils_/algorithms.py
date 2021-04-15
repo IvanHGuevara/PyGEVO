@@ -5,14 +5,8 @@ if Compiler.cythonEnabled:
 from utils_.domain_objects.mapper import Mapper
 from utils_.grammarWrapper import GrammarWrapper
 from utils_.general_functions import General_functions
-import pyximport
-pyximport.install()
 from .search_operators.ga import GA
-from .fitness_functions.fitness_functions import FitnessFunctions
 import numpy as np
-from numpy import load
-from numpy import save
-from pathlib import Path
 import pickle
 
 

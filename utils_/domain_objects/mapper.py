@@ -2,7 +2,6 @@
 import numpy as np
 import sys
 sys.setrecursionlimit(10000)
-import time
 
 class Mapper:
 

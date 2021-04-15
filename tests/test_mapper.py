@@ -6,9 +6,8 @@ from utils_.domain_objects.mapper import Mapper
 
 
 def initialise_test():
-    mapper = Mapper(GrammarWrapper.createFromString(GrammarContainer.grammartController()))
+    mapper = Mapper(GrammarWrapper.createFromString(GrammarContainer.grammarController()))
     mapper.toMatrixBNF()
-    print(mapper.mBNF)
     return mapper
 
 def test_check_creation_matrix():

@@ -5,13 +5,13 @@ class GrammarContainer:
     
     @staticmethod
     def grammarMaths():
-        return """<f> := (<numeros><operadoresBasicos><f>)
-                 <operadoresBasicos> := +|-|*|/|pote|raiz
-                 <numeros> := <enteros><numeros>|<f>"""
+        return """<f> := (<numbers><basicOperators><f>)
+                 <basicOperators> := +|-|*|/|square|root
+                 <numbers> := <integer><numbers>|<f>"""
 
     @staticmethod
     def grammarController():
-        return """<inicio> := izquierda <sig>|derecha <sig>
-                  <sig> := adelantar <matiz>|atras <matiz>|adelantar <inicio>|atras <inicio>|<sig>|<EOF>
-                  <matiz> := golpear|agacharse|disparar|<EOF>"""
+        return """<begin> := left <next>|right <next>
+                  <next> := forward <action>|back <action>|forward <begin>|back <begin>|<next>|<EOF>
+                  <action> := hit|down|shoot|<EOF>"""
     
