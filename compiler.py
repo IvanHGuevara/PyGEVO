@@ -38,9 +38,9 @@ class Compiler:
                     os.chdir(pathAnterior)
             #setupAll
             pathAnterior=os.getcwd()
-            path=pathAnterior.split("PyGE")[0]+"PyGE//"
+            path=pathAnterior.split("PyGE")[0]+"PyGE/"
             os.chdir(path)
-            call("python setupAll.py build_ext")
+            os.system("python setupAll.py build_ext")
             os.chdir(pathAnterior)
 
         else:
@@ -57,20 +57,15 @@ class Compiler:
             for file in files:
                 print("Rename:", end="")
                 print(file)
-
                 pathAnterior = os.getcwd()
-
                 name = file.split("\\")[-1]
                 print(name)
-
-
                 simpleName = name.replace(".pyx", "")
                 path = file.replace(name, "")
                 os.chdir(path)
                 rename(name,simpleName+".py")
                 if os.path.exists(simpleName+".c"):
                     remove(simpleName+".c")
-
                 path1 = os.getcwd()
                 filesPyx=[]
                 dist1 = ""
@@ -92,7 +87,3 @@ class Compiler:
     @classmethod
     def enableCython(cls):
         cls.cythonEnabled=True
-
-#comp=Compiler()
-#comp.enableCython()
-#comp.compile()

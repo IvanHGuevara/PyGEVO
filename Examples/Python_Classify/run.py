@@ -30,17 +30,8 @@ def processIndividual(ind, debug = False):
     return ind.fitness_score
 
 def createPhenotypes():
-    pop = Population(numberIndividuals=10, individualSize=20)
-    population = pop.generatePop()
-    algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE(population, processIndividual, gen=6, porcentSelect=0.2, staticSelection=50)
-    evolvedPop = evolvedPop.getValidIndividuals()
-    evolvedPop = evolvedPop.getIndividualsOrderedByFitness()
-    print("")
-    print("Top mejores 20:")
-    for ind in evolvedPop[0:20]:
-        print(ind.genotype)
-        print(ind.phenotype)
-        print(ind.fitness_score)
-        print("========================================================================================================")
+    population = Population(numberIndividuals=10, individualSize=20).generatePop()
+    population = Algorithms("grammar.bnf", initBNF=1, debug=False).evolveWithGE(population, processIndividual, gen=6, porcentSelect=0.2, staticSelection=50, validIndividuals=True, orderedByFitness=True)
+    population.showTopTen()
+
 createPhenotypes()

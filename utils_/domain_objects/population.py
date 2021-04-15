@@ -16,9 +16,18 @@ class Population:
             self.pop.append(ind)
         return self
 
-    def getValidIndividuals(self):
-        return list(filter((lambda ind: ind.isValid()), self.pop))
+    def filterValidIndividuals(self):
+        self.pop = list(filter((lambda ind: ind.isValid()), self.pop))
+        return self
 
-    def getIndividualsOrderedByFitness(self):
-       return sorted(self.pop, key=lambda ind: ind.fitness_score, reverse=True)
+    def orderIndividualsByFitness(self):
+       self.pop = sorted(self.pop, key=lambda ind: ind.fitness_score, reverse=True)
+       return self
 
+    def showTopTen(self):
+        print("Show top ten:")
+        for ind in self.pop[0:10]:
+            print(ind.genotype)
+            print(ind.phenotype)
+            print(ind.fitness_score)
+            print("========================================================================================================")

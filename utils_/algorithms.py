@@ -30,7 +30,7 @@ class Algorithms:
                 ind.phenotype = evolvedIndividuals[idx]
         return population
 
-    def evolveWithGE(self, population, fitness_function, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True,debug=False):
+    def evolveWithGE(self, population, fitness_function, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True, debug=False, validIndividuals=True, orderedByFitness=True ):
         self.gen=gen
         evolvedIndividuals = []
         for generationNumber in range(gen):
@@ -59,6 +59,10 @@ class Algorithms:
             newPopulation = list(General_functions.async_map_g(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
             newPopulation = sorted(newPopulation, key=lambda ind: (ind.fitness_score,len(ind.phenotype)), reverse=reverse)
             population.pop = newPopulation
+        if validIndividuals:
+            population.filterValidIndividuals()
+        if orderedByFitness:
+            population.orderIndividualsByFitness()
         return population
 
     def showTopTen(population):

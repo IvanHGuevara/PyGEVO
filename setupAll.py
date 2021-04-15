@@ -1,6 +1,6 @@
 import glob
 import os
-from os import remove
+import platform
 from distutils.core import setup
 from Cython.Build import cythonize
 import pyximport
@@ -12,18 +12,21 @@ path=os.getcwd()
 print(path)
 files=[]
 dist=""
-for i in range(0,5):
+system = platform.system()
 
+for i in range(0,5):
     targetPattern = path+"//"+dist+"*.pyx"
     files=files+glob.glob(targetPattern)
     dist = dist + "**//"
+
 for file in files:
     print("Compile:",end="")
     print(file)
     pathAnterior=os.getcwd()
-
-    name=file.split("\\")[-1]
-    print(name)
+    if system=="Windows":
+        name = file.split("\\")[-1]
+    else:
+        name = file.split("/")[-1]
     simpleName=name.replace(".pyx", "")
     path=file.replace(name,"")
     os.chdir(path)
