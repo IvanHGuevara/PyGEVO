@@ -1,59 +1,66 @@
-#from utils_.cythonFunctions import compileAll
-#compileAll.compiler()
-#from utils_.search_operators import compileAll
-#compileAll.compiler()
-#from Examples.Python_Pi import compileAll
-#compileAll.compiler()
+from compiler import Compiler
+comp=Compiler()
+#comp.enableCython()
+comp.compile()
 import sys
-sys.path.append('../../')
-
-from utils_.cythonFunctions.population import Population
-from utils_.algorithms import Algorithms
-import os
-import time
-import shutil
-import numpy as np
 import Examples.Python_Pi.fitnesFunction as ff
-from numpy import load
-from numpy import save
+from utils_.domain_objects.population import Population
+from utils_.algorithms import Algorithms
+from utils_.search_operators.ga import GA
 from pathlib import Path
 import pickle
 
+phenotypeScore={}
 
 def prossesIndividue(ind, debug=True):
     #print(ind.genotype)
+    scoreDic=phenotypeScore.get(ind.phenotype,-1)
+    if scoreDic==-1:
+        if ind.phenotype.count("<") == 0:
 
-    if ind.phenotype.count("<") == 0:
-        dim = np.loadtxt("SampleData.txt", dtype=float)
-        score= ff.fitnesFunction(ind.phenotype,dim)
-        #if ind.fitness_score>0:
-        if ind.fitness_score==-1:
-            #time.sleep(10)
-            print("Error raro -1")
+            score= ff.fitnesFunction(ind.phenotype)
+
+            if ind.fitness_score==-1:
+                #time.sleep(10)
+                print("Error raro -1")
+            else:
+                ind.fitness_score=score
+                phenotypeScore[ind.phenotype]=score
         else:
-            ind.fitness_score=score
+            score=999999999999999999999999999999999
+            ind.fitness_score= score
+            phenotypeScore[ind.phenotype] = score
+        return score
     else:
-        ind.fitness_score= 0
-    #if debug:
-        #porcentProgress = int(int(i) * 100 / int(lenPopulation))
-        #print(str(i) + "/" + str(lenPopulation) + " ->" + str(porcentProgress) + "% ->" + "Result_exect_Score: " + str(
-        #    ind.fitness_score))
-        #print("----------------------------------------------------------------------------------------------------------")
-    return ind.fitness_score
+        return scoreDic
 def createPhenotypes():
     fileSave="data_1"
     fileObj = Path(fileSave + '.txt')
     if fileObj.is_file():
-        f=open(fileSave + '.txt', 'rb')
-        population=pickle.loads(f.read())
-        f.close()
+        try:
+            f=open(fileSave + '.txt', 'rb')
+
+            population=pickle.loads(f.read())
+            f.close()
+        except:
+            f.close()
+            sys.exit()
         #print(pop[0].phenotype)
         #pop = load(fileSave + '.txt',allow_pickle=True)
+        evolvedIndividuals=[]
+
+        #for ind in population:
+
+        #    evolvedIndividuals.append(ind)
+        #population=evolvedIndividuals
+        population = sorted(population, key=lambda ind: (ind.fitness_score), reverse=False)
+        population = GA.select(population, 0.05, 10000)
     else:
         pop = Population(numberIndividuals=25, individualSize=18)
         population = pop.generatePop()
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE(population, prossesIndividue,gen=1000,porcentSelect=0.2,estaticSelect=25,fileSave=fileSave,reverse=True)
+
+    evolvedPop = algo.evolveWithGE(population, prossesIndividue,gen=1000,porcentSelect=0.1,fileSave=fileSave,reverse=False,debug=True)#,staticSelection=200
 
 
     #inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))

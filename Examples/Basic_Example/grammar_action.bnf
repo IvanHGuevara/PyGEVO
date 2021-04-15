@@ -1,0 +1,4 @@
+<begin>:=left <next> <action>|right <next> <action>
+<next>:=forward|back|<next> <next> |<next> <next>
+<action>:=hit<EOF>|down<EOF>|shoot<EOF>|
+<EOF>:=

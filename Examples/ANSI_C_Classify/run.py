@@ -1,14 +1,15 @@
 import sys
 sys.path.append('../../')
-from utils_.cythonFunctions import compileAll
+from compiler import Compiler
+Compiler.enableCython()
+Compiler.compile()
+
 import pyximport
 pyximport.install()
-# compileAll.compiler()
-from utils_.cythonFunctions.population import Population
+
+from utils_.domain_objects.population import Population
 from utils_.algorithms import Algorithms
-from utils_.search_operators.ga import GA
-from utils_.general_functions import General_functions
-from subprocess import call
+
 import os
 import platform
 import time
@@ -130,18 +131,8 @@ def processIndividual(ind):
 
 def createPhenotypes():
     prepareExperiment()
-    pop = Population(numberIndividuals=100, individualSize=8)
-    population = pop.generatePop()
-    algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-    evolvedPop = algo.evolveWithGE(population, processIndividual, gen=4, porcentSelect=0.2, staticSelection=50)
-    inds=list(filter((lambda ind: ind.isValid()), evolvedPop))
-    inds=sorted(inds,
-           key=lambda ind: ind.fitness_score, reverse=True)
-    print("")
-    print("Top mejores 20:")
-    for ind in inds[0:20] :
-        print(ind.genotype)
-        print(ind.phenotype)
-        print(ind.fitness_score)
-        print("========================================================================================================")
+    population = Population(numberIndividuals=100, individualSize=8).generatePop()
+    population = Algorithms("grammar.bnf", initBNF=1, debug=False).evolveWithGE(population, processIndividual, gen=4, porcentSelect=0.2, staticSelection=50, validIndividuals=True, orderedByFitness=True)
+    population.showTopTen()
+
 createPhenotypes()

@@ -1,5 +1,6 @@
 .idea
 utils_/__pycache__/*
 *.pyc
-utils_/cythonFunctions/*.c
-utils_/cythonFunctions/*.so
+*.pyd
+*build/
+*data_*.txt
