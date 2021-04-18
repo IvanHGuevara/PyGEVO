@@ -63,11 +63,11 @@ class Run:
         #14: Client.KLINE_INTERVAL_1WEEK,
         #15: Client.KLINE_INTERVAL_1MONTH
         #for i in [1,2,3,4,5,7]:
-        #1,3,6
+        #6,3,1
         for i in [6]:
             hC = HistoricalCripto()
             #hC.getData(("BTCUSDT", i, "1 Jan, 2021", "10 Apr, 2022"))
-            fileName=hC.getData((self.symbol, i, "1 Jan, 2021", "10 Jan, 2021"))
+            fileName=hC.getData((self.symbol, i, "1 Jan, 2021", "17 Mar, 2021"))
 
             self.file = fileName[:-4]
             if not os.path.isfile(self.carpeta + "//" + self.file+ '_Indicators' +".csv"):
