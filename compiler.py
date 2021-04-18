@@ -68,7 +68,8 @@ class Compiler:
                 simpleName = name.replace(".pyx", "")
                 path = file.replace(name, "")
                 os.chdir(path)
-                rename(name,simpleName+".py")
+                if not os.path.exists(simpleName+".py"):
+                    rename(name,simpleName+".py")
                 if os.path.exists(simpleName+".c"):
                     remove(simpleName+".c")
 
