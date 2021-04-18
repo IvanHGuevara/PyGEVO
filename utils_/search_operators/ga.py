@@ -23,12 +23,13 @@ class GA:
     def mutateInd(indG):
         size=len(indG.genotype)
         point = random.randint(0, size - 1)
-        indG.genotype[point]=random.randint(0, 256)
-        return indG
+        newIndG=copy.deepcopy(indG)
+        newIndG.genotype[point]=random.randint(0, 256)
+        return newIndG
 
     @staticmethod
     def mutate(individuals, algorithms):
-        g=np.array(list(GA.mutateInd(ind) for ind in individuals))
+        g=np.array(GA.mutateInd(ind) for ind in individuals)
         individuals = algorithms.evolveWithGE(g)
         return individuals
 

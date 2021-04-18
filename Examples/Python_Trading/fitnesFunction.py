@@ -6,6 +6,8 @@ def smallerThan(a,b):
 def greaterThan(a,b):
     return a>b
 
+
+
 def fitnesFunction(phenotype,df):
     presupuesto=100
     ganancia=0

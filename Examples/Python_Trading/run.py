@@ -55,9 +55,9 @@ class Run:
             #hC.getData(("BTCUSDT", i, "1 Jan, 2021", "10 Apr, 2022"))
             fileName=hC.getData((self.symbol, i, "1 Jan, 2021", "1 Apr, 2021"))
 
-            self.file = fileName
-            if not os.path.isfile(self.carpeta + "//" + 'Indicators_' + self.file):
-                df = pd.read_csv(self.carpeta + '//' + self.file)
+            self.file = fileName[:-4]
+            if not os.path.isfile(self.carpeta + "//" + self.file+ '_Indicators' +".csv"):
+                df = pd.read_csv(self.carpeta + '//' + self.file+".csv")
                 df.head()
 
                 columns = ["Open", "High", "Low", "Close", "Volume"]
@@ -73,7 +73,7 @@ class Run:
                 # print(df)
                 # print(df.columns)
                 # print(len(df.columns))
-                df.to_csv(self.carpeta + "//" + 'Indicators_' + self.file, sep=',')
+                df.to_csv(self.carpeta + "//" + self.file+ '_Indicators' +".csv", sep=',')
 
 
 
@@ -87,15 +87,15 @@ class Run:
         #plt.ylabel(columns)
         #plt.show()
 
-        self.data=pd.read_csv(self.carpeta + "//" + 'Indicators_' + self.file)
+        self.data=pd.read_csv(self.carpeta + "//" + self.file+ '_Indicators' +".csv")
 
 
-        fileSave = "data_1"
-        fileObj = Path(fileSave + '.txt')
+        fileSave = self.carpeta + "//" + self.file+ '_Data'
+        fileObj = Path(fileSave )
         pop = Population("grammar.bnf", numberIndividuals=25, individualSize=50, fitness_function=self.prossesIndividue)
         if fileObj.is_file():
             try:
-                f = open(fileSave + '.txt', 'rb')
+                f = open(fileSave , 'rb')
 
                 population = pickle.loads(f.read())
                 f.close()
@@ -111,15 +111,15 @@ class Run:
             #    evolvedIndividuals.append(ind)
             # population=evolvedIndividuals
             population = sorted(population, key=lambda ind: (ind.fitness_score), reverse=True)
-            population = GA.select(population, 0.05, 10000)
+            population = GA.select(population, 0.05, 500)
         else:
 
             population = pop.generatePop()
             print(population)
         algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
 
-        evolvedPop = algo.evolveWithGE(population, populationFactory=pop, gen=100000, porcentSelect=0.9, fileSave=fileSave,
-                                       reverse=True, debug=True,staticSelection=1000)  # ,staticSelection=200
+        evolvedPop = algo.evolveWithGE(population, populationFactory=pop, gen=100000, porcentSelect=0.9,staticSelection=1000, fileSave=fileSave,
+                                       reverse=True, debug=True,noDuplicates=True,cacheScore=True)  # ,staticSelection=200
 
 
         #inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))

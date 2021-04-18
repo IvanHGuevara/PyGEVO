@@ -32,11 +32,12 @@ class Algorithms:
         return population
 
 
-    def evolveWithGE(self, population, populationFactory=None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True,debug=False):
+    def evolveWithGE(self, population, populationFactory=None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True,debug=False,noDuplicates=True,cacheScore=True):
         self.gen=gen
 
         individualBatch=np.array(population)
         for generationNumber in range(gen):
+            print("===================================================================")
             print("Generation: ", generationNumber)
             print("===================================================================")
             #for ind in population:
@@ -50,16 +51,18 @@ class Algorithms:
             print("mutating individuals.......")
             #Save Population
             if fileSave != "":
-                f=open(fileSave+'.txt', 'wb')
+                f=open(fileSave, 'wb')
                 f.write(pickle.dumps(individualBatch))
                 f.close()
 
             individualBatch_1 = list(General_functions.async_map_g(lambda indG: GA.mutateInd(indG), individualBatch))
+
             print("generating crossover.......")
             individualBatch_1 = GA.crossover(individualBatch_1)
 
             newPopulation = np.concatenate((individualBatch, individualBatch_1))
-            newPopulation=populationFactory.recalculate(newPopulation,noDuplicates=True,cacheScore=True)
+
+            newPopulation=populationFactory.recalculate(newPopulation,noDuplicates=noDuplicates,cacheScore=cacheScore)
             #for ind in newPopulation:
             #    ind.phenotype=self.mapper.mapBNF(ind.genotype, initBNF - 1)[0]
             #newPopulation = list(General_functions.async_map_g(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
@@ -69,9 +72,11 @@ class Algorithms:
 
             if debug:
                 print("Top 10:")
-                for ind in individualBatch[:3]:
-                    print(ind.genotype)
+                for ind in individualBatch[:9]:
+                    #print(ind.genotype)
+                    print("Score:"+str(ind.fitness_score)+" -> ", end="")
                     print(ind.phenotype)
-                    print(ind.fitness_score)
-                    print("========================================================================================================")
+
+                    #print("========================================================================================================")
+
         return population
