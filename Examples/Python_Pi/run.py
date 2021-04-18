@@ -10,32 +10,33 @@ from utils_.search_operators.ga import GA
 from pathlib import Path
 import pickle
 
-phenotypeScore={}
+import time
 
 def prossesIndividue(ind, debug=True):
     #print(ind.genotype)
-    scoreDic=phenotypeScore.get(ind.phenotype,-1)
-    if scoreDic==-1:
+
+
         if ind.phenotype.count("<") == 0:
 
             score= ff.fitnesFunction(ind.phenotype)
 
-            if ind.fitness_score==-1:
-                #time.sleep(10)
-                print("Error raro -1")
-            else:
-                ind.fitness_score=score
-                phenotypeScore[ind.phenotype]=score
+            ind.fitness_score=score
+            if score==0:
+                print(ind.genotype)
+                print(ind.phenotype)
+                print(ind.fitness_score)
+                print("Lo encontroooooooooooooooooooooooooooooooooooo")
+                time.sleep(60*60*10)
         else:
             score=999999999999999999999999999999999
             ind.fitness_score= score
-            phenotypeScore[ind.phenotype] = score
+
         return score
-    else:
-        return scoreDic
+
 def createPhenotypes():
     fileSave="data_1"
     fileObj = Path(fileSave + '.txt')
+    pop = Population("grammar.bnf", numberIndividuals=25, individualSize=18, fitness_function=prossesIndividue)
     if fileObj.is_file():
         try:
             f=open(fileSave + '.txt', 'rb')
@@ -56,11 +57,12 @@ def createPhenotypes():
         population = sorted(population, key=lambda ind: (ind.fitness_score), reverse=False)
         population = GA.select(population, 0.05, 10000)
     else:
-        pop = Population(numberIndividuals=25, individualSize=18)
+
         population = pop.generatePop()
+        print(population)
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
 
-    evolvedPop = algo.evolveWithGE(population, prossesIndividue,gen=1000,porcentSelect=0.1,fileSave=fileSave,reverse=False,debug=True)#,staticSelection=200
+    evolvedPop = algo.evolveWithGE(population, populationFactory=pop,gen=100000,porcentSelect=0.5,fileSave=fileSave,reverse=False,debug=True,staticSelection=10000)#,staticSelection=200
 
 
     #inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))

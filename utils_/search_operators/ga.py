@@ -6,12 +6,12 @@ import copy
 class GA:
 
     @staticmethod
-    def select(individuals, porcent=0.5,estaticSelect=0, f_to_int=(lambda x: x.fitness_score),reverse=False):
+    def select(individuals, porcent=0.5,estaticSelect=0):
         if estaticSelect<=0:
             n=math.trunc(len(individuals)*porcent)
         else:
             n=estaticSelect
-        return sorted(individuals, key=f_to_int, reverse=reverse)[:n]
+        return individuals[:n]
 
     @staticmethod
     def evaluate(ind, function):
@@ -39,6 +39,7 @@ class GA:
 
     @staticmethod
     def crossover(individuals):
+
         gs=[]
         g = list(ind for ind in individuals)
         point = random.randint(1, len(g[0].genotype) - 1)
@@ -51,4 +52,5 @@ class GA:
             if i2 not in gs:
                 gs.append(i2)
         gs_a=np.array(gs)
+
         return gs_a

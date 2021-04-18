@@ -55,7 +55,7 @@ def fitnesFunction(phenotype):
     except:
         puntaje=9999999999999999999999999999999999999999
     return puntaje
-
+#sin(mysub(sin(tan(myadd(i, i))), mysub(i, factorial(i+1))))  0.0001
 #"pdiv(pdiv(myadd(i, mymul(i, cos(cos(i)))), factorial(i)), i)"
 #"pdiv(sin(factorial(i)), myadd(sin(factorial(i+1)), i))"  score=1017.4998165340455
 #dim = np.loadtxt("SampleData.txt", dtype=float)

@@ -1,4 +1,0 @@
-<inicio>:=izquierda <sig> <accion>|derecha <sig> <accion>
-<sig>:=adelante|atras|<sig> <sig> |<sig> <sig>
-<accion>:=golpear<EOF>|agacharse<EOF>|disparar<EOF>|
-<EOF>:=

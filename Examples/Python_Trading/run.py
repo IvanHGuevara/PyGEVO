@@ -1,8 +1,8 @@
 from compiler import Compiler
 comp=Compiler()
-comp.enableCython()
+#comp.enableCython()
 comp.compile()
-
+import ta
 import sys
 sys.path.append('../../')
 
@@ -23,12 +23,17 @@ import pandas as pd
 from ta import add_all_ta_features
 from ta.utils import dropna
 from ta.volatility import BollingerBands
+from utils_.search_operators.ga import GA
+
+carpeta = "data"
+file = 'Binance_BTCUSDT_1h_1614556800000-1617235200000.csv'
+data = pd.read_csv(carpeta + "//" + 'Indicators_' + file)
 def prossesIndividue(ind, debug=True):
     #print(ind.genotype)
 
     if ind.phenotype.count("<") == 0:
-        dim = np.loadtxt("SampleData.txt", dtype=float)
-        score= ff.fitnesFunction(ind.phenotype,dim)
+
+        score= ff.fitnesFunction(ind.phenotype,data)
         #if ind.fitness_score>0:
         if ind.fitness_score==-1:
             #time.sleep(10)
@@ -45,59 +50,74 @@ def prossesIndividue(ind, debug=True):
     return ind.fitness_score
 def createPhenotypes():
     #extraction Data
-    data="data"
-    if not os.path.isdir(data):
-        for i in [1,2,3,4,5,7]:
+
+
+    if not os.path.isdir(carpeta):
+        #for i in [1,2,3,4,5,7]:
+        for i in [6]:
             hC = HistoricalCripto()
-            hC.getData(("BTCUSDT", i, "1 Jan, 2021", "10 Apr, 2022"))
-    df = pd.read_csv(data + '//Binance_BTCUSDT_1m_1609459200000-1649548800000.csv')
-    df.head()
-    columns=['Close']
-    dataPlot=df.loc[:, columns]
-    print(dataPlot)
-    plt.plot(dataPlot[-100:])
-    plt.ylabel(columns)
-    plt.show()
+            #hC.getData(("BTCUSDT", i, "1 Jan, 2021", "10 Apr, 2022"))
+            hC.getData(("BTCUSDT", i, "1 Mar, 2021", "1 Apr, 2021"))
+    #df = pd.read_csv(carpeta + '//Binance_BTCUSDT_1m_1609459200000-1649548800000.csv')
+    #df.head()
+    #columns=['Close']
+    #dataPlot=df.loc[:, columns]
+    #print(dataPlot)
+    #plt.plot(dataPlot[-100:])
+    #plt.ylabel(columns)
+    #plt.show()
+    if not os.path.isfile(carpeta+"//"+'Indicators_'+file):
 
-    # Clean NaN values
-    df = dropna(df)
+        df = pd.read_csv(carpeta + '//' + file)
+        df.head()
 
-    # Add ta features filling NaN values
-    df = add_all_ta_features(
-        df, open="Open", high="High", low="Low", close="Close", volume="Volume", fillna=True)
-    # Initialize Bollinger Bands Indicator
-    indicator_bb = BollingerBands(close=df["Close"], window=20, window_dev=2)
+        columns = ["Open", "High", "Low", "Close", "Volume"]
+        data = df.loc[:, columns]
+        data = data.apply(pd.to_numeric, errors='coerce')
+        df = ta.utils.dropna(data)
+        #print(df.columns)
+        # Add all ta features filling nans values
+        df = ta.add_all_ta_features(
+            df, "Open", "High", "Low", "Close", "Volume", fillna=True
+        )
+        #df.head()
+        #print(df)
+        #print(df.columns)
+        #print(len(df.columns))
+        df.to_csv(carpeta+"//"+'Indicators_'+file, sep=',')
+    data=pd.read_csv(carpeta + "//" + 'Indicators_' + file)
 
-    # Add Bollinger Bands features
-    df['bb_bbm'] = indicator_bb.bollinger_mavg()
-    df['bb_bbh'] = indicator_bb.bollinger_hband()
-    df['bb_bbl'] = indicator_bb.bollinger_lband()
 
-    # Add Bollinger Band high indicator
-    df['bb_bbhi'] = indicator_bb.bollinger_hband_indicator()
+    fileSave = "data_1"
+    fileObj = Path(fileSave + '.txt')
+    pop = Population("grammar.bnf", numberIndividuals=25, individualSize=50, fitness_function=prossesIndividue)
+    if fileObj.is_file():
+        try:
+            f = open(fileSave + '.txt', 'rb')
 
-    # Add Bollinger Band low indicator
-    df['bb_bbli'] = indicator_bb.bollinger_lband_indicator()
+            population = pickle.loads(f.read())
+            f.close()
+        except:
+            f.close()
+            sys.exit()
+        # print(pop[0].phenotype)
+        # pop = load(fileSave + '.txt',allow_pickle=True)
+        evolvedIndividuals = []
 
-    # Add Width Size Bollinger Bands
-    df['bb_bbw'] = indicator_bb.bollinger_wband()
+        # for ind in population:
 
-    # Add Percentage Bollinger Bands
-    df['bb_bbp'] = indicator_bb.bollinger_pband()
-    return 0
-    #fileSave="data_1"
-    #fileObj = Path(fileSave + '.txt')
-    #if fileObj.is_file():
-    #    f=open(fileSave + '.txt', 'rb')
-    #    population=pickle.loads(f.read())
-    #    f.close()
-    #    #print(pop[0].phenotype)
-    #    #pop = load(fileSave + '.txt',allow_pickle=True)
-    #else:
-    #    pop = Population(numberIndividuals=25, individualSize=18)
-    #    population = pop.generatePop()
-    #algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-    #evolvedPop = algo.evolveWithGE(population, prossesIndividue,gen=1000,porcentSelect=0.2,fileSave=fileSave,reverse=True)
+        #    evolvedIndividuals.append(ind)
+        # population=evolvedIndividuals
+        population = sorted(population, key=lambda ind: (ind.fitness_score), reverse=True)
+        population = GA.select(population, 0.05, 10000)
+    else:
+
+        population = pop.generatePop()
+        print(population)
+    algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
+
+    evolvedPop = algo.evolveWithGE(population, populationFactory=pop, gen=100000, porcentSelect=0.9, fileSave=fileSave,
+                                   reverse=True, debug=True)  # ,staticSelection=200
 
 
     #inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))
