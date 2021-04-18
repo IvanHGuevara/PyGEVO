@@ -1,5 +1,4 @@
-<expr> := (<numberTipeGrafic>,<buyCondition>,<sellCondition>)
-<numberTipeGrafic> := 1 | 2 | 3
+<expr> := (<buyCondition>,<sellCondition>)
 <buyCondition> := (<boolExpression> and <buyCondition>) | (<boolExpression> or <buyCondition>) | <boolExpression>
 <sellCondition> := (<boolExpression> and <sellCondition>) | (<boolExpression> or <sellCondition>) | <boolExpression>
 <boolExpression> := smallerThan(<indicatorNumber>,<indicatorNumber>) | greaterThan(<indicatorNumber>,<indicatorNumber>)

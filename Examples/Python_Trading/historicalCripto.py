@@ -175,10 +175,12 @@ class HistoricalCripto:
 
             print("---")
         else:
+
             symbol=operation[0]
             opc_per=operation[1]
             start=operation[2]
             end=operation[3]
+
         switcher = {
             1: Client.KLINE_INTERVAL_1MINUTE,
             2: Client.KLINE_INTERVAL_3MINUTE,
@@ -198,39 +200,41 @@ class HistoricalCripto:
         }
 
         interval = switcher.get(opc_per, Client.KLINE_INTERVAL_1MINUTE)
+        fileName = "Binance_{}_{}_{}-{}.csv".format(symbol,
+                                                    interval,
+                                                    self.date_to_milliseconds(start),
+                                                    self.date_to_milliseconds(end))
 
-        klines = self.get_historical_klines(symbol, interval, start, end)
+        if not os.path.isfile(self.data + "//"  + fileName):
+            klines = self.get_historical_klines(symbol, interval, start, end)
 
-        # open a file with filename including symbol, interval and start and end converted to milliseconds
-        with open(self.data+"//"+
-            "Binance_{}_{}_{}-{}.csv".format(
-                symbol,
-                interval,
-                self.date_to_milliseconds(start),
-                self.date_to_milliseconds(end)
-            ),
-            'w',  # set file write mode
-            newline=''
-        ) as f:
-            # f.write(json.dumps(klines))
-            writer = csv.writer(f, delimiter=',')
-            writer.writerow([
-                "Open time",
-                "Open",
-                "High",
-                "Low",
-                "Close",
-                "Volume",
-                "Close time",
-                "Quote asset volume",
-                "Number of trades",
-                "Taker buy base asset volume",
-                "Taker buy quote asset volume",
-                "Can be ignored"
-                ])
-            writer.writerows(klines)
+            # open a file with filename including symbol, interval and start and end converted to milliseconds
 
-        print("Terminado.-")
+
+            with open(self.data+"//"+fileName,
+                'w',  # set file write mode
+                newline=''
+            ) as f:
+                # f.write(json.dumps(klines))
+                writer = csv.writer(f, delimiter=',')
+                writer.writerow([
+                    "Open time",
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close",
+                    "Volume",
+                    "Close time",
+                    "Quote asset volume",
+                    "Number of trades",
+                    "Taker buy base asset volume",
+                    "Taker buy quote asset volume",
+                    "Can be ignored"
+                    ])
+                writer.writerows(klines)
+
+            print("Terminado.-")
+        return fileName
 
 #hC=HistoricalCripto()
 #hC.getData(("BTCUSDT",13,"1 Jan, 2021","10 Apr, 2022"))

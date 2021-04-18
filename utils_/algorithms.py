@@ -63,7 +63,7 @@ class Algorithms:
             #for ind in newPopulation:
             #    ind.phenotype=self.mapper.mapBNF(ind.genotype, initBNF - 1)[0]
             #newPopulation = list(General_functions.async_map_g(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
-            newPopulation = sorted(newPopulation, key=lambda ind: float(ind.fitness_score), reverse=reverse)
+            newPopulation = sorted(newPopulation, key=lambda ind: ind.fitness_score, reverse=reverse)
             individualBatch = GA.select(newPopulation, porcentSelect, staticSelection)
 
 

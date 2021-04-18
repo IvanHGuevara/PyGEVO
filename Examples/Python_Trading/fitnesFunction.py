@@ -14,7 +14,7 @@ def fitnesFunction(phenotype,df):
     sell=False
     for index, r in df[1:].iterrows():
         logicTrading=eval(phenotype)
-        if logicTrading[1] and not buy:
+        if logicTrading[0] and not buy:
             if precioPosicion == 0:
                 precioPosicion = r['Close']
             else:
@@ -25,7 +25,7 @@ def fitnesFunction(phenotype,df):
                 precioPosicion = r['Close']
             buy=True
             sell=False
-        if logicTrading[2] and not sell:
+        if logicTrading[1] and not sell:
             if precioPosicion == 0:
                 precioPosicion = r['Close']
             else:
@@ -36,7 +36,7 @@ def fitnesFunction(phenotype,df):
                 precioPosicion = r['Close']
             sell=True
             buy=False
-        if (presupuesto-ganancia)<0 or (logicTrading[1] and logicTrading[2]):
+        if (presupuesto-ganancia)<0 or (logicTrading[0] and logicTrading[1]):
             return 0
     return ganancia
 
