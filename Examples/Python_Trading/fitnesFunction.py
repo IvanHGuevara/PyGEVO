@@ -22,7 +22,7 @@ def fitnesFunction(phenotype,df):
             else:
                 #cierra sell
                 porcentaje=(precioPosicion - r['Close'])/precioPosicion
-                ganancia = ganancia + (presupuesto+ganancia)*porcentaje
+                ganancia = ganancia + ((presupuesto+ganancia)*porcentaje)*logicTrading[2]
                 #pone posicion
                 precioPosicion = r['Close']
             buy=True
@@ -33,12 +33,12 @@ def fitnesFunction(phenotype,df):
             else:
                 #cierra buy
                 porcentaje = ((r['Close'])-precioPosicion) / precioPosicion
-                ganancia=ganancia+(presupuesto+ganancia)*porcentaje
+                ganancia=ganancia+(presupuesto+ganancia)*porcentaje*logicTrading[2]
                 #pone posicion
                 precioPosicion = r['Close']
             sell=True
             buy=False
-        if (presupuesto-ganancia)<0 or (logicTrading[0] and logicTrading[1]):
+        if (ganancia+presupuesto)<0 or (logicTrading[0] and logicTrading[1]):
             return 0
     return ganancia
 

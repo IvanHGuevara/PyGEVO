@@ -1,4 +1,5 @@
-<expr> := (<buyCondition>,<sellCondition>)
+<expr> := (<buyCondition>,<sellCondition>,<leverage>)
+<leverage> := 1 | 3 | 10 | 20
 <buyCondition> := (<boolExpression> and <buyCondition>) | (<boolExpression> or <buyCondition>) | <boolExpression>
 <sellCondition> := (<boolExpression> and <sellCondition>) | (<boolExpression> or <sellCondition>) | <boolExpression>
 <boolExpression> := smallerThan(<indicatorNumber>,<indicatorNumber>) | greaterThan(<indicatorNumber>,<indicatorNumber>)

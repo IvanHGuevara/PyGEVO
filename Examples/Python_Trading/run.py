@@ -47,13 +47,27 @@ class Run:
     def createPhenotypes(self):
         #extraction Data
 
-
-
+        #1: Client.KLINE_INTERVAL_1MINUTE,
+        #2: Client.KLINE_INTERVAL_3MINUTE,
+        #3: Client.KLINE_INTERVAL_5MINUTE,
+        #4: Client.KLINE_INTERVAL_15MINUTE,
+        #5: Client.KLINE_INTERVAL_30MINUTE,
+        #6: Client.KLINE_INTERVAL_1HOUR,
+        #7: Client.KLINE_INTERVAL_2HOUR,
+        #8: Client.KLINE_INTERVAL_4HOUR,
+        #9: Client.KLINE_INTERVAL_6HOUR,
+        #10: Client.KLINE_INTERVAL_8HOUR,
+        #11: Client.KLINE_INTERVAL_12HOUR,
+        #12: Client.KLINE_INTERVAL_1DAY,
+        #13: Client.KLINE_INTERVAL_3DAY,
+        #14: Client.KLINE_INTERVAL_1WEEK,
+        #15: Client.KLINE_INTERVAL_1MONTH
         #for i in [1,2,3,4,5,7]:
+        #1,3,6
         for i in [6]:
             hC = HistoricalCripto()
             #hC.getData(("BTCUSDT", i, "1 Jan, 2021", "10 Apr, 2022"))
-            fileName=hC.getData((self.symbol, i, "1 Jan, 2021", "1 Apr, 2021"))
+            fileName=hC.getData((self.symbol, i, "1 Jan, 2021", "10 Jan, 2021"))
 
             self.file = fileName[:-4]
             if not os.path.isfile(self.carpeta + "//" + self.file+ '_Indicators' +".csv"):
