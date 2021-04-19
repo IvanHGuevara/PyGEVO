@@ -11,73 +11,74 @@ def greaterThan(a,b):
 
 
 def fitnesFunction(phenotype,df,debug=False):
-    #logicTrading =(<buyCondition>,<sellCondition>,<leverage>)
+    #logicTrading =(<leverage>,<buyCondition>,<sellCondition>)
     contadorOperaciones=0
     comision=0.01
     presupuesto=100
     ganancia=0
     pico_ganancia=0
-
     precioPosicion=0
     buy=False
     sell=False
-    for index, r in df[1:].iterrows():
 
+    r_ant=df.iloc[1]
+    for index, r in df[2:].iterrows():
         logicTrading=eval(phenotype)
-        if (logicTrading[0] and logicTrading[1]):
-            if debug:
-                print(str("-")+" -> % GAIN:"+str(ganancia) + " -> Indesicion in " + str(r['Close']))
-            continue
+        leverage=logicTrading[0]
+        buyCondition=logicTrading[1]
+        sellCondition=logicTrading[2]
 
-        #Liquidation
-        if buy:
-            porcentaje = ((precioPosicion - r['High']) / precioPosicion) * (1 - comision)
-            pico_ganancia = ganancia + (presupuesto + pico_ganancia) * porcentaje * logicTrading[2]
+        #Liquidation Buy
+        if buy and precioPosicion!=0:
+            porcentaje = ((r['Low']-precioPosicion) / precioPosicion) * (1 - comision)
+            pico_ganancia_buy = ganancia + (presupuesto + pico_ganancia) * porcentaje * leverage
+            if (pico_ganancia_buy + presupuesto) < 0:
+                if debug:
+                    print(str(contadorOperaciones) + " pico_ganancia_buy:" + str(
+                        pico_ganancia_buy) + " -> Liquidated in " + str(r['Close']))
 
-            #print(["BUY",buy,r['High'],pico_ganancia])
-        if sell:
-            porcentaje = (((r['Low']) - precioPosicion) / precioPosicion) * (1 - comision)
-            pico_ganancia = ganancia + (presupuesto + pico_ganancia) * porcentaje * logicTrading[2]
+                return 0
+        # Liquidation Sell
+        if sell and precioPosicion!=0:
+            porcentaje = ((( precioPosicion-r['High']) ) / precioPosicion) * (1 - comision)
+            pico_ganancia_sell = ganancia + (presupuesto + pico_ganancia) * porcentaje * leverage
+            if (pico_ganancia_sell + presupuesto) < 0:
+                if debug:
+                    print(str(contadorOperaciones) + " pico_ganancia_sell:" + str(
+                        pico_ganancia_sell) + " -> Liquidated in " + str(r['Close']))
 
-            #print(["SELL",sell,r['Low'],pico_ganancia])
-        if (buy and (pico_ganancia+presupuesto)<0) or (sell and (pico_ganancia+presupuesto)<0) :
-            if debug:
-                print(str(contadorOperaciones)+" -> Liquidated in "+str(r['Close']))
-            return 0
-
-        if logicTrading[0] and not buy:
-            if precioPosicion == 0:
-                precioPosicion = r['Close']
-            else:
-                #cierra sell
+                return 0
+        #Buy
+        if buyCondition and not buy and not sellCondition:
+            # Close Sell
+            if precioPosicion != 0:
                 porcentaje=((precioPosicion - r['Close'])/precioPosicion)*(1-comision)
-                ganancia = ganancia + ((presupuesto+ganancia)*porcentaje)*logicTrading[2]
-
-                #pone posicion
-                precioPosicion = r['Close']
+                ganancia = ganancia + ((presupuesto+ganancia)*porcentaje)*leverage
+            #Open Buy
+            precioPosicion = r['Close']
             buy=True
             sell=False
             contadorOperaciones=contadorOperaciones+1
             if debug:
-                print(str(contadorOperaciones)+" -> % GAIN:"+str(ganancia)+" -> BUY in "+str(r['Close'])+" x"+str(logicTrading[2]))
-        if logicTrading[1] and not sell:
-            if precioPosicion == 0:
-                precioPosicion = r['Close']
-            else:
-                #cierra buy
+                print(str(contadorOperaciones)+" -> % GAIN:"+str(ganancia)+" -> BUY in "+str(r['Close'])+" x"+str(leverage))
+            r_ant = r
+            continue
+        #Sell
+        if sellCondition and not sell and not buyCondition:
+            #Close buy
+            if precioPosicion != 0:
                 porcentaje = (((r['Close'])-precioPosicion) / precioPosicion)*(1-comision)
-                ganancia=ganancia+(presupuesto+ganancia)*porcentaje*logicTrading[2]
-
-                #pone posicion
-                precioPosicion = r['Close']
+                ganancia=ganancia+(presupuesto+ganancia)*porcentaje*leverage
+            #Open Sell
+            precioPosicion = r['Close']
             sell=True
             buy=False
             contadorOperaciones = contadorOperaciones + 1
             if debug:
-                print(str(contadorOperaciones)+" -> % GAIN:"+str(ganancia)+" -> SELL in "+str(r['Close'])+" x"+str(logicTrading[2]))
+                print(str(contadorOperaciones)+" -> % GAIN:"+str(ganancia)+" -> SELL in "+str(r['Close'])+" x"+str(leverage))
+            r_ant = r
+            continue
 
-
-    #print("CantidadOperaciones:"+str(contadorOperaciones)+" ->",end="")
     return ganancia
 
 

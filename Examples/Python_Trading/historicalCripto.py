@@ -202,8 +202,10 @@ class HistoricalCripto:
         interval = switcher.get(opc_per, Client.KLINE_INTERVAL_1MINUTE)
         fileName = "Binance_{}_{}_{}-{}.csv".format(symbol,
                                                     interval,
-                                                    self.date_to_milliseconds(start),
-                                                    self.date_to_milliseconds(end))
+                                                    start.replace(" ","_").replace(",",""),
+                                                    end.replace(" ","_").replace(",",""))
+                                                    #self.date_to_milliseconds(start),
+                                                    #self.date_to_milliseconds(end))
 
         if not os.path.isfile(self.data + "//"  + fileName):
             klines = self.get_historical_klines(symbol, interval, start, end)

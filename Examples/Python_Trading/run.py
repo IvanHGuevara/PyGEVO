@@ -67,7 +67,7 @@ class Run:
         for i in [6]:
             hC = HistoricalCripto()
             #hC.getData(("BTCUSDT", i, "1 Jan, 2021", "10 Apr, 2022"))
-            fileName=hC.getData((self.symbol, i, "1 Jan, 2021", "17 Mar, 2021"))
+            fileName=hC.getData((self.symbol, i, "1 Jan, 2020", "1 Jan, 2021"))
 
             self.file = fileName[:-4]
             if not os.path.isfile(self.carpeta + "//" + self.file+ '_Indicators' +".csv"):
@@ -132,7 +132,7 @@ class Run:
             print(population)
         algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
 
-        evolvedPop = algo.evolveWithGE(population, populationFactory=pop, gen=100000, porcentSelect=0.9,staticSelection=1000, fileSave=fileSave,
+        evolvedPop = algo.evolveWithGE(population, populationFactory=pop, gen=100000, porcentSelect=0.9,staticSelection=500, fileSave=fileSave,
                                        reverse=True, debug=True,noDuplicates=True,cacheScore=True)  # ,staticSelection=200
 
 
