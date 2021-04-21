@@ -5,7 +5,6 @@ PyGE is a pythonic low-code framework for Grammatical Evolution. Minimalistic, e
 ```python
 from utils_.domain_objects.population import Population
 from utils_.algorithms import Algorithms
-from utils_.search_operators.ga import GA
 from utils_.fitness_functions.fitness_functions import FitnessFunctions
 
 population = Population(numberIndividuals=6, individualSize=8).generatePop()
@@ -24,7 +23,6 @@ import pyximport
 pyximport.install()
 from utils_.domain_objects.population import Population
 from utils_.algorithms import Algorithms
-from utils_.search_operators.ga import GA
 from utils_.fitness_functions.fitness_functions import FitnessFunctions
 
 population = Population(numberIndividuals=6, individualSize=8).generatePop()
