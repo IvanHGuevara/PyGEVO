@@ -36,7 +36,7 @@ def prossesIndividue(ind, debug=True):
 def createPhenotypes():
     fileSave="data_1"
     fileObj = Path(fileSave )
-    pop = Population("grammar.bnf", numberIndividuals=25, individualSize=18, fitness_function=prossesIndividue)
+    pop = Population("grammar.bnf", numberIndividuals=25, individualSize=25, fitness_function=prossesIndividue)
     if fileObj.is_file():
         try:
             f=open(fileSave , 'rb')
@@ -62,7 +62,7 @@ def createPhenotypes():
         print(population)
     algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
 
-    evolvedPop = algo.evolveWithGE(population, populationFactory=pop,gen=10000,porcentSelect=0.5,fileSave=fileSave,reverse=False,debug=True,staticSelection=10000,noDuplicates=True,cacheScore=True)#,staticSelection=200
+    evolvedPop = algo.evolveWithGE(population, populationFactory=pop,gen=10000,porcentSelect=0.5,fileSave=fileSave,reverse=False,debug=True,staticSelection=1000,noDuplicates=True,cacheScore=True)#,staticSelection=200
 
 
     #inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))

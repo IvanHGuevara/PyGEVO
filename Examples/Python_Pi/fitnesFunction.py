@@ -38,13 +38,16 @@ def fitnesFunction(phenotype):
     puntaje=0
     #print(phenotype)
     acum=0
-    for i in range(0,100):
+    for i in range(0,150):
         try:
             calc=eval(phenotype.lower())
-            acum= acum+calc
+
             #print(str(acum)+" + "+str(calc))
-            #if (pi-temp) >= (pi-calc) :
-            #    temp=calc
+            if abs(pi-acum) >= abs(pi-(acum + calc)) :
+
+                acum = acum + calc
+            else:
+                return 9999999999999999999999999999999999999999
         except:
             return 9999999999999999999999999999999999999999
     if pi == acum:
@@ -59,5 +62,5 @@ def fitnesFunction(phenotype):
 #"pdiv(pdiv(myadd(i, mymul(i, cos(cos(i)))), factorial(i)), i)"
 #"pdiv(sin(factorial(i)), myadd(sin(factorial(i+1)), i))"  score=1017.4998165340455
 #dim = np.loadtxt("SampleData.txt", dtype=float)
-#num=fitnesFunction("pdiv(cos(sin(sin(i))), log(factorial(i)))")
-#print(num)
+num=fitnesFunction("myadd(pdiv(pdiv(factorial(i), factorial(i)), factorial(i)), pdiv(sin(i), mymul(factorial(i+1), pdiv(factorial(i), sin(i)))))")
+print(num)

@@ -17,6 +17,8 @@ def fitnesFunction(phenotype,df,debug=False):
     presupuesto=100
     ganancia=0
     pico_ganancia=0
+    pico_ganancia_buy=0
+    pico_ganancia_sell=0
     precioPosicion=0
     buy=False
     sell=False
@@ -30,29 +32,34 @@ def fitnesFunction(phenotype,df,debug=False):
 
         #Liquidation Buy
         if buy and precioPosicion!=0:
-            porcentaje = ((r['Low']-precioPosicion) / precioPosicion) * (1 - comision)
-            pico_ganancia_buy = ganancia + (presupuesto + pico_ganancia) * porcentaje * leverage
-            if (pico_ganancia_buy + presupuesto) < 0:
+            porsentaje_actual=1*r['Low']/precioPosicion
+            ganancia_actual=((presupuesto*porsentaje_actual)-presupuesto)*leverage*(1+comision)
+            presupuesto_actual=presupuesto*(1+(ganancia_actual/100))
+            if presupuesto_actual <= 0:
                 if debug:
-                    print(str(contadorOperaciones) + " pico_ganancia_buy:" + str(
-                        pico_ganancia_buy) + " -> Liquidated in " + str(r['Close']))
+                    print(str(contadorOperaciones) + " ganancia_actual:" + str(
+                        ganancia_actual) +" presupuesto_actual:" + str(
+                        presupuesto_actual) + " -> Liquidated in Close:" + str(r['Close'])+" Low:" + str(r['Low']))
 
-                return 0
+                return -presupuesto
         # Liquidation Sell
         if sell and precioPosicion!=0:
-            porcentaje = ((( precioPosicion-r['High']) ) / precioPosicion) * (1 - comision)
-            pico_ganancia_sell = ganancia + (presupuesto + pico_ganancia) * porcentaje * leverage
-            if (pico_ganancia_sell + presupuesto) < 0:
-                if debug:
-                    print(str(contadorOperaciones) + " pico_ganancia_sell:" + str(
-                        pico_ganancia_sell) + " -> Liquidated in " + str(r['Close']))
 
-                return 0
+            porsentaje_actual=1*r['High']/precioPosicion
+            ganancia_actual=-((presupuesto*porsentaje_actual)-presupuesto)*leverage*(1+comision)
+            presupuesto_actual=presupuesto*(1+(ganancia_actual/100))
+            if presupuesto_actual <= 0:
+                if debug:
+                    print(str(contadorOperaciones) + " ganancia_actual:" + str(
+                        ganancia_actual) +" presupuesto_actual:" + str(
+                        presupuesto_actual) + " -> Liquidated in Close:" + str(r['Close'])+" High:" + str(r['High']))
+
+                return -presupuesto
         #Buy
         if buyCondition and not buy and not sellCondition:
             # Close Sell
             if precioPosicion != 0:
-                porcentaje=((precioPosicion - r['Close'])/precioPosicion)*(1-comision)
+                porcentaje=((precioPosicion - r['Close'])/precioPosicion)*(1-comision*2)
                 ganancia = ganancia + ((presupuesto+ganancia)*porcentaje)*leverage
             #Open Buy
             precioPosicion = r['Close']
@@ -67,7 +74,7 @@ def fitnesFunction(phenotype,df,debug=False):
         if sellCondition and not sell and not buyCondition:
             #Close buy
             if precioPosicion != 0:
-                porcentaje = (((r['Close'])-precioPosicion) / precioPosicion)*(1-comision)
+                porcentaje = (((r['Close'])-precioPosicion) / precioPosicion)*(1-comision*2)
                 ganancia=ganancia+(presupuesto+ganancia)*porcentaje*leverage
             #Open Sell
             precioPosicion = r['Close']
@@ -83,7 +90,7 @@ def fitnesFunction(phenotype,df,debug=False):
 
 
 
-def fitnesFunction_futuro(symbol="BTCUSDT",graficTypeNum=3,init="1 Jan, 2021",end="10 Jan, 2021",phenotype="((greaterThan(r['volatility_bbli'],r['others_cr']) or (smallerThan(r['volume_obv'],r['volatility_atr']) or (greaterThan(r['trend_psar_down_indicator'],r['volatility_bbhi']) and smallerThan(r['trend_visual_ichimoku_b'],r['volume_adi'])))),(smallerThan(r['momentum_stoch_rsi_d'],r['volatility_ui']) and greaterThan(r['volume_fi'],r['trend_ichimoku_base'])),20)"):
+def fitnesFunction_futuro(symbol="BTCUSDT",graficTypeNum=3,init="1 Jan, 2021",end="10 Jan, 2021",typeMarket="spot",phenotype="((greaterThan(r['volatility_bbli'],r['others_cr']) or (smallerThan(r['volume_obv'],r['volatility_atr']) or (greaterThan(r['trend_psar_down_indicator'],r['volatility_bbhi']) and smallerThan(r['trend_visual_ichimoku_b'],r['volume_adi'])))),(smallerThan(r['momentum_stoch_rsi_d'],r['volatility_ui']) and greaterThan(r['volume_fi'],r['trend_ichimoku_base'])),20)"):
     # extraction Data
 
     # 1: Client.KLINE_INTERVAL_1MINUTE,
@@ -106,9 +113,10 @@ def fitnesFunction_futuro(symbol="BTCUSDT",graficTypeNum=3,init="1 Jan, 2021",en
     carpeta="data"
     hC = HistoricalCripto()
     # hC.getData(("BTCUSDT", i, "1 Jan, 2021", "10 Apr, 2022"))
-    fileName = hC.getData((symbol, graficTypeNum,init,end))
+    fileName = hC.getData((symbol, graficTypeNum,init,end),fileName=None,typeMarket=typeMarket)
 
     file = fileName[:-4]
+
     if not os.path.isfile(carpeta + "//" + file + '_Indicators' + ".csv"):
         df = pd.read_csv(carpeta + '//' + file + ".csv")
         df.head()

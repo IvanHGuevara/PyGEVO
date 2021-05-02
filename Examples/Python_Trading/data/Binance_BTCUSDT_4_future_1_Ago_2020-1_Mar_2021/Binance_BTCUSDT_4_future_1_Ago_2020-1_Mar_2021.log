@@ -1,0 +1,873 @@
+Top 10:BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+Generation: 0 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 200
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 1 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 277
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 2 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 3 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 4 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 5 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 6 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 7 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 8 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 9 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 10 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 11 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 12 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 13 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 14 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 15 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 16 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 17 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 18 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 19 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 20 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 21 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 22 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 23 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 24 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 25 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 26 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 27 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 28 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 29 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 30 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 31 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 32 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 33 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 34 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 35 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 36 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 37 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 38 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 39 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 40 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 41 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 42 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 43 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 44 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 45 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 46 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 47 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:37375742046.00847 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r['volatility_kch'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:35803685598.4079 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:32962937610.03631 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volume_vwap'],r_ant['volatility_kch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r_ant['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:31895647658.346756 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r['trend_aroon_down'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Open'],r_ant['trend_psar_down']))))))
+Score:27495671393.945255 -> (5,smallerThan(r['volume_em'],r['volume_sma_em']),(greaterThan(r_ant['trend_mass_index'],r['momentum_ppo']) and (greaterThan(r_ant['volatility_dcm'],r['volatility_dch']) or (smallerThan(r['volume_adi'],r['volume_em']) and (greaterThan(r['trend_kst'],r['momentum_tsi']) or greaterThan(r['Low'],r_ant['trend_psar_down']))))))
+===================================================================
+Generation: 48 BTCUSDT future 4 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......

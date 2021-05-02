@@ -16,14 +16,30 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from ta.utils import dropna
 from utils_.search_operators.ga import GA
+import sys
+from contextlib import redirect_stdout
+import shutil
+temp = sys.stdout                 # store original stdout object for later
+
 
 class Run:
+
     def __init__(self) -> None:
         self.symbol="BTCUSDT"
 
         self.carpeta = "data"
         self.file = None
         self.data = None
+        self.log=""
+    def printL(self, text,end=None):
+
+        with open(self.log,"a") as f:
+            if end=="":
+                f.write(str(text) )
+            else:
+                f.write( str(text)+'\n')
+            f.close()
+            print(str(text),end=end)
     def prossesIndividue(self,ind, debug=True):
         #print(ind.genotype)
 
@@ -33,7 +49,7 @@ class Run:
             #if ind.fitness_score>0:
             if ind.fitness_score==-1:
                 #time.sleep(10)
-                print("Error raro -1")
+                self.printL("Error raro -1")
             else:
                 ind.fitness_score=score
         else:
@@ -44,7 +60,9 @@ class Run:
             #    ind.fitness_score))
             #print("----------------------------------------------------------------------------------------------------------")
         return ind.fitness_score
-    def createPhenotypes(self):
+    def createPhenotypes(self,symbol="BTCUSDT",typeMarket="future",intervalo=4, ini="1 Ago, 2020", fin="1 Mar, 2021",individues = 300,individuesSize = 50,gen = 10000):
+
+
         #extraction Data
 
         #1: Client.KLINE_INTERVAL_1MINUTE,
@@ -62,32 +80,51 @@ class Run:
         #13: Client.KLINE_INTERVAL_3DAY,
         #14: Client.KLINE_INTERVAL_1WEEK,
         #15: Client.KLINE_INTERVAL_1MONTH
-        #for i in [1,2,3,4,5,7]:
-        #6,3,1
-        for i in [6]:
-            hC = HistoricalCripto()
-            #hC.getData(("BTCUSDT", i, "1 Jan, 2021", "10 Apr, 2022"))
-            fileName=hC.getData((self.symbol, i, "1 Jan, 2020", "1 Jan, 2021"))
 
-            self.file = fileName[:-4]
-            if not os.path.isfile(self.carpeta + "//" + self.file+ '_Indicators' +".csv"):
-                df = pd.read_csv(self.carpeta + '//' + self.file+".csv")
-                df.head()
 
-                columns = ["Open", "High", "Low", "Close", "Volume"]
-                data = df.loc[:, columns]
-                data = data.apply(pd.to_numeric, errors='coerce')
-                df = ta.utils.dropna(data)
-                # print(df.columns)
-                # Add all ta features filling nans values
-                df = ta.add_all_ta_features(
-                    df, "Open", "High", "Low", "Close", "Volume", fillna=True
-                )
-                # df.head()
-                # print(df)
-                # print(df.columns)
-                # print(len(df.columns))
-                df.to_csv(self.carpeta + "//" + self.file+ '_Indicators' +".csv", sep=',')
+        hC = HistoricalCripto()
+        #hC.getData(("BTCUSDT", i, "1 Jan, 2021", "10 Apr, 2022"))
+        #fileName=hC.getData((self.symbol, 6, "1 Ago, 2020", "1 Jan, 2021"),typeMarket="future")
+        #fileName=hC.getData((self.symbol, i, "2 Ago, 2020", "1 Jan, 2021"),typeMarket="future")
+        #fileName = hC.getData((self.symbol, 1, "1 Jan, 2021", "1 Mar, 2021"), typeMarket="future")
+        #fileName = hC.getData((self.symbol, 1, "1 Jan, 2021", "1 Mar, 2021"), typeMarket="future") #10
+        #fileName = hC.getData((self.symbol, 1, "2 Jan, 2021", "1 Mar, 2021"), typeMarket="future")
+        #fileName = hC.getData((self.symbol, 4, "1 Ago, 2020", "1 Mar, 2021"), typeMarket="future")
+        #fileName = hC.getData((self.symbol, 3, "1 Ago, 2020", "1 Mar, 2021"), typeMarket="future")
+        fileName = "Binance_{}_{}_{}_{}-{}.csv".format(symbol,
+                                                       intervalo, typeMarket,
+                                                       ini.replace(" ", "_").replace(",", ""),
+                                                       fin.replace(" ", "_").replace(",", ""))
+        self.file = fileName[:-4]
+        self.carpeta = self.carpeta + "//" + self.file
+        if not os.path.exists(self.carpeta):
+            os.mkdir(self.carpeta)
+        hC.getData((symbol,intervalo, ini, fin),fileName=self.file+"//"+fileName,typeMarket=typeMarket)
+
+
+
+        self.log=self.carpeta + "//" + self.file+'.log'
+        titule=str(symbol) + " " + str(typeMarket) + " " + str(intervalo) + " " + ini + "-" + fin + " Individues:" + str(
+            individues) + " Size:" + str(individuesSize) + " Generations:" + str(gen)
+        self.printL(titule)
+        if not os.path.isfile(self.carpeta + "//" + self.file+ '_Indicators' +".csv"):
+            df = pd.read_csv(self.carpeta + '//' + self.file+".csv")
+            df.head()
+
+            columns = ["Open", "High", "Low", "Close", "Volume"]
+            data = df.loc[:, columns]
+            data = data.apply(pd.to_numeric, errors='coerce')
+            df = ta.utils.dropna(data)
+            # print(df.columns)
+            # Add all ta features filling nans values
+            df = ta.add_all_ta_features(
+                df, "Open", "High", "Low", "Close", "Volume", fillna=True
+            )
+            # df.head()
+            # print(df)
+            # print(df.columns)
+            # print(len(df.columns))
+            df.to_csv(self.carpeta + "//" + self.file+ '_Indicators' +".csv", sep=',')
 
 
 
@@ -106,7 +143,7 @@ class Run:
 
         fileSave = self.carpeta + "//" + self.file+ '_Data'
         fileObj = Path(fileSave )
-        pop = Population("grammar.bnf", numberIndividuals=25, individualSize=50, fitness_function=self.prossesIndividue)
+        pop = Population("grammar.bnf", numberIndividuals=individues, individualSize=individuesSize, fitness_function=self.prossesIndividue)
         if fileObj.is_file():
             try:
                 f = open(fileSave , 'rb')
@@ -125,15 +162,15 @@ class Run:
             #    evolvedIndividuals.append(ind)
             # population=evolvedIndividuals
             population = sorted(population, key=lambda ind: (ind.fitness_score), reverse=True)
-            population = GA.select(population, 0.05, 500)
+            population = GA.select(population, 0.05, individues)
         else:
 
             population = pop.generatePop()
-            print(population)
+            self.printL(population)
         algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
 
-        evolvedPop = algo.evolveWithGE(population, populationFactory=pop, gen=100000, porcentSelect=0.9,staticSelection=500, fileSave=fileSave,
-                                       reverse=True, debug=True,noDuplicates=True,cacheScore=True)  # ,staticSelection=200
+        evolvedPop = algo.evolveWithGE(population, populationFactory=pop, gen=gen,staticSelection=individues, fileSave=fileSave,
+                                       reverse=True, debug=True,noDuplicates=True,cacheScore=True,print=self.printL,titule=titule)  # ,staticSelection=200
 
 
         #inds = list(filter((lambda ind: ind.phenotype[0].count("<") == 0), evolvedPop))
@@ -145,5 +182,5 @@ class Run:
         #    print(ind.phenotype)
         #    print(ind.fitness_score)
         #    print("========================================================================================================")
-run=Run()
-run.createPhenotypes()
+#run=Run()
+#run.createPhenotypes()

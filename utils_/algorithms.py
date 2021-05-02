@@ -26,19 +26,19 @@ class Algorithms:
 
     def asyncEvolveWithGE(self, population):
         for _ in range(self.gen):
-            evolvedIndividuals =  list(General_functions.async_map_g((lambda ind: self.mapper.mapBNF(ind.genotype,self.initBNF-1,debug=self.debug)[0]), population))
+            evolvedIndividuals =  list(General_functions.async_map((lambda ind: self.mapper.mapBNF(ind.genotype,self.initBNF-1,debug=self.debug)[0]), population))
             for idx, ind in enumerate(population):
                 ind.phenotype = evolvedIndividuals[idx]
         return population
 
 
-    def evolveWithGE(self, population, populationFactory=None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True,debug=False,noDuplicates=True,cacheScore=True):
+    def evolveWithGE(self, population, populationFactory=None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True,debug=False,noDuplicates=True,cacheScore=True,print=print,titule=""):
         self.gen=gen
 
         individualBatch=np.array(population)
         for generationNumber in range(gen):
             print("===================================================================")
-            print("Generation: ", generationNumber)
+            print("Generation: "+ str(generationNumber)+" "+titule)
             print("===================================================================")
             #for ind in population:
             #    ind.phenotype=self.mapper.mapBNF(ind.genotype, initBNF - 1)[0]
@@ -46,8 +46,8 @@ class Algorithms:
             if staticSelection<=0:
                 print("selecting individuals with a probability of: ", porcentSelect)
             else:
-                print("selecting individuals : ", staticSelection)
-            print("Grabbing a batch of: ", len(individualBatch))
+                print("selecting individuals : "+str(staticSelection))
+            print("Grabbing a batch of: "+str(len(individualBatch)))
             print("mutating individuals.......")
             #Save Population
             if fileSave != "":
@@ -55,13 +55,13 @@ class Algorithms:
                 f.write(pickle.dumps(individualBatch))
                 f.close()
 
-            individualBatch_1 = list(General_functions.async_map_g(lambda indG: GA.mutateInd(indG), individualBatch))
+            individualBatch_1 = list(General_functions.async_map(lambda indG: GA.mutateInd(indG), individualBatch))
 
             print("generating crossover.......")
             individualBatch_1 = GA.crossover(individualBatch_1)
 
             newPopulation = np.concatenate((individualBatch, individualBatch_1))
-
+            print("recalculate phenotypes and score .......")
             newPopulation=populationFactory.recalculate(newPopulation,noDuplicates=noDuplicates,cacheScore=cacheScore)
             #for ind in newPopulation:
             #    ind.phenotype=self.mapper.mapBNF(ind.genotype, initBNF - 1)[0]

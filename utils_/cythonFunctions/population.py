@@ -28,68 +28,30 @@ class Population:
             ind.genotype = genotype
             ind.phenotype = self.mapper.mapBNF(ind.genotype, 0)[0]
             if self.fitness_function is not None:
-                scoreDic = self.phenotypeScore.get(ind.phenotype, (-1,False))
+                scoreDic = self.phenotypeScore.get(ind.phenotype, (-1,False,0))
 
                 if scoreDic[0]==-1:
                     score=self.fitness_function(ind)
                     ind.fitness_score=score
-                    self.phenotypeScore[ind.phenotype] = (score,False)
+                    self.phenotypeScore[ind.phenotype] = (score,False,0)
                 else:
                     ind.fitness_score=scoreDic[0]
             individuals.append(ind)
 
         return individuals
-    def recalculate_(self,inds,noDuplicates=False,cacheScore=True):
+
+
+    def recalculate(self,inds,noDuplicates=True,cacheScore=True,maxCacheInactiveItem=4):
         #scoreDic {(score,isRepit)}
-        for clave in self.phenotypeScore.keys():
-            self.phenotypeScore[clave] = (self.phenotypeScore.get(clave, (-1, False))[0], False)
-        indsNew=[]
-
-        for ind in inds:
-            ind.phenotype=self.mapper.mapBNF(ind.genotype, 0)[0]
-
-            if self.fitness_function is not None:
-                if cacheScore:
-                    scoreDic = self.phenotypeScore.get(ind.phenotype, (-1,False))
-                else:
-                    scoreDic=(-1, False)
-                #Control duplicates
-                if noDuplicates:
-                    #Control Cache
-                    if scoreDic[1]==False :
-                        if scoreDic[0]==-1:
-                            score=self.fitness_function(ind)
-                            ind.fitness_score=score
-
-                            self.phenotypeScore[ind.phenotype] = (score, True)
-                        else:
-                            ind.fitness_score=scoreDic[0]
-                            self.phenotypeScore[ind.phenotype] = (scoreDic[0], True)
-                        indsNew.append(ind)
-
-                elif not noDuplicates:
-                    #Control Cache
-                    if scoreDic[0]==-1:
-                        score=self.fitness_function(ind)
-                        ind.fitness_score=score
-                        if cacheScore:
-                            self.phenotypeScore[ind.phenotype] = (score, True)
-                    else:
-                        ind.fitness_score=scoreDic[0]
-                        if cacheScore:
-                            self.phenotypeScore[ind.phenotype] = (scoreDic[0], True)
-                    indsNew.append(ind)
-        return indsNew
-
-    def recalculate(self,inds,noDuplicates=False,cacheScore=True):
-        #scoreDic {(score,isRepit)}
-
+        countMatch=0
+        countFail=0
         indsNew=[]
 
         #se inicia variable de repeticion
         for phenotype in self.phenotypeScore.keys():
             #guardo en diccionario
-            self.phenotypeScore[phenotype] = (self.phenotypeScore[phenotype][0], False)
+            item=self.phenotypeScore[phenotype]
+            self.phenotypeScore[phenotype] = (item[0], False,item[2])
         #if noDuplicates:
         #    inds=inds.tolist()
 
@@ -98,22 +60,42 @@ class Population:
             # se genera los nuevos phenotipos
             ind.phenotype = self.mapper.mapBNF(ind.genotype, 0)[0]
 
-            tuple=self.phenotypeScore.get(ind.phenotype, (None, False))
+            tuple=self.phenotypeScore.get(ind.phenotype, (None, False, 0))
 
-
-            # -1 -> no se encontro en cache
+            #(score, inCache,use)
+            # (None, inCache,use) -> no se encontro en cache
             if tuple[0] is None:
+                countFail=countFail+1
                 ind.fitness_score = self.fitness_function(ind)
+
             else:
+                countMatch=countMatch+1
                 ind.fitness_score = tuple[0]
-
             if cacheScore:
-                self.phenotypeScore[ind.phenotype] = (ind.fitness_score, True)
+                self.phenotypeScore[ind.phenotype] = (ind.fitness_score, True, 1)
 
+            # control de duplicados
             if noDuplicates and not tuple[1]:
                 indsNew.append(ind)
                 continue
 
+
+        tamCacheAnt=len(self.phenotypeScore)
+        if cacheScore:
+            #se elimina de cache si no se utilizo dos veces seguidas
+            for phenotype in list(self.phenotypeScore.keys()):
+
+                if phenotype not in list(map(lambda ind : ind.phenotype,inds)):
+                    item = self.phenotypeScore[phenotype]
+                    if item[2]>=-maxCacheInactiveItem:
+                        self.phenotypeScore[phenotype]=(item[0], False,item[2]-1)
+                    else:
+                        self.phenotypeScore.pop(phenotype, None)
+                else:
+                    item = self.phenotypeScore[phenotype]
+                    if item[2] <= maxCacheInactiveItem:
+                        self.phenotypeScore[phenotype] = (item[0], False, 0)
+        print("Size Cache:"+str(len(self.phenotypeScore))+" countMatch:"+str(countMatch)+" countFail:"+str(countFail)+" Performance:"+str(round(100*countMatch/(countMatch+countFail+1),2))+" Deleted:"+str(tamCacheAnt-len(self.phenotypeScore)))
         if noDuplicates:
             return np.array(indsNew)
         else:

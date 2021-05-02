@@ -1,0 +1,207 @@
+Top 10:BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+Generation: 0 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 200
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:13536825.691987928 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['volatility_atr'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13207264.637327908 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['trend_sma_fast'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:12798434.994070873 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:12645806.544840908 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['trend_sma_fast'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:12176661.705782263 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+===================================================================
+Generation: 1 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 289
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:13536825.691987928 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['volatility_atr'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13207264.637327908 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['trend_sma_fast'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:12798434.994070873 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+===================================================================
+Generation: 2 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:13536825.691987928 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['volatility_atr'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13207264.637327908 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['trend_sma_fast'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:12798434.994070873 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+===================================================================
+Generation: 3 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:13536825.691987928 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['volatility_atr'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13207264.637327908 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['trend_sma_fast'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:12798434.994070873 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+===================================================================
+Generation: 4 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:13536825.691987928 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['volatility_atr'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13207264.637327908 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['trend_sma_fast'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:12798434.994070873 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+===================================================================
+Generation: 5 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:13554577.523803968 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kch'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13536825.691987928 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['volatility_atr'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13261412.492287474 -> (5,(smallerThan(r['High'],r['trend_ichimoku_b']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+===================================================================
+Generation: 6 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:26160269.19974965 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_dcw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r['trend_adx'])))))
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:13554577.523803968 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kch'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13536825.691987928 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['volatility_atr'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+===================================================================
+Generation: 7 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:26160269.19974965 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_dcw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r['trend_adx'])))))
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:13554577.523803968 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kch'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13536825.691987928 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['volatility_atr'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:13519259.82067353 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_dcm'],r['volume_fi']) and (greaterThan(r['trend_mass_index'],r['trend_mass_index']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+===================================================================
+Generation: 8 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:26160269.19974965 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_dcw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r['trend_adx'])))))
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14261826.965341229 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r_ant['momentum_wr'],r['trend_cci']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:13554577.523803968 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kch'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r_ant['trend_visual_ichimoku_b']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+===================================================================
+Generation: 9 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:26160269.19974965 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_dcw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r['trend_adx'])))))
+Score:24622456.60923573 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_dcw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14261826.965341229 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r_ant['momentum_wr'],r['trend_cci']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+Score:14124042.276938554 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r['trend_psar_down_indicator'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+===================================================================
+Generation: 10 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
+Top 10:
+Score:26160269.19974965 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_dcw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r['trend_adx'])))))
+Score:24622456.60923573 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_dcw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:17787247.80837289 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r['trend_adx'])))))
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16741635.370616147 -> (5,(smallerThan(r['volume_obv'],r['trend_mass_index']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r_ant['volatility_bbh'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(smallerThan(r['volume_obv'],r['trend_aroon_down']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:16685844.601603359 -> (5,(greaterThan(r['momentum_stoch_rsi_k'],r['volume_obv']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r['trend_kst_diff'],r['volatility_bbw']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r['trend_stc'],r_ant['trend_adx'])))))
+Score:14261826.965341229 -> (5,(smallerThan(r_ant['momentum_stoch'],r['momentum_stoch_rsi']) or smallerThan(r_ant['others_dr'],r['momentum_ppo'])),(smallerThan(r['volatility_kcl'],r['volume_fi']) and (greaterThan(r_ant['momentum_wr'],r['trend_cci']) or (smallerThan(r['trend_sma_slow'],r['momentum_kama']) or smallerThan(r_ant['trend_aroon_up'],r_ant['momentum_rsi'])))))
+===================================================================
+Generation: 11 BTCUSDT future 3 1 Ago, 2020-1 Mar, 2021 Individues:300 Size:50 Generations:10000
+===================================================================
+selecting individuals : 300
+Grabbing a batch of: 300
+mutating individuals.......
+generating crossover.......
+recalculate phenotypes and score .......
