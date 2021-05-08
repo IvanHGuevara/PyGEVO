@@ -1,5 +1,0 @@
-<expr> := (<number>,<buyCondition>,<sellCondition>)
-<number> := 1 | 2 | 3
-<buyCondition> := <boolExpression> and <boolExpression> and <boolExpression>
-<sellCondition> := <boolExpression> and <boolExpression> and <boolExpression>
-<boolExpression> :=

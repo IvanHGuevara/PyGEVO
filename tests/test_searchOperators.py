@@ -1,7 +1,7 @@
-import sys
-sys.path.append('../')
-from utils_.search_operators.ga import GA
-from utils_.domain_objects.population import Population
+
+from ..core.searchOperators.gaCore import GA
+from ..core.domain.population import Population
+
 
 def initialise_test():
     return Population(numberIndividuals=4, individualSize=8)
