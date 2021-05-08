@@ -1,4 +1,3 @@
-
 from compiler import Compiler
 comp=Compiler()
 #comp.enableCython()
@@ -14,6 +13,7 @@ pyximport.install()
 
 
 
+
 import os
 import platform
 import time
@@ -23,7 +23,7 @@ import subprocess
 def runPhenotype(phenotype):
     #define system
     system = platform.system()
-    pathAnterior=os.getcwd()
+    previousPath=os.getcwd()
     files=os.listdir('Build//')
     files=list(map(lambda file: int(file.replace("_out.txt","")),list(filter(lambda file: file.count("_out.txt"), files))))
     if len(files)>0:
@@ -66,7 +66,7 @@ def runPhenotype(phenotype):
         file = open("Build//"+fileName+"_out.txt", 'w')
         file.write(str(score))
         file.close()
-        os.chdir(pathAnterior)
+        os.chdir(previousPath)
         os.remove("Build//" + fileName + ".c")
         if system=="Windows":
             os.remove("Build//"+fileName+".exe")
