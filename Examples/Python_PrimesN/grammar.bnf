@@ -1,1 +1,0 @@
-<expr> := mymul(<expr>, <expr>) | mysub(<expr>, <expr>) | myadd(<expr>, <expr>) | pdiv(<expr>, <expr>) | if_cond(<expr>, <expr>, <expr>, <expr>) | (<expr>) | sin(<expr>) | cos(<expr>) | tan(<expr>) | exp(<expr>) | log(<expr>) | factorial(i) | factorial(i+1) | i | i | i | i | i

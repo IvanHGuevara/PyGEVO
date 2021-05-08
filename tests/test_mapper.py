@@ -1,8 +1,6 @@
-from grammarContainer import GrammarContainer
-import sys
-sys.path.append('../')
-from utils_.grammarWrapper import GrammarWrapper
-from utils_.cythonFunctions.mapper import Mapper
+from .grammarContainer import GrammarContainer
+from ..core.domain.grammarWrapper import GrammarWrapper
+from ..core.domain.mapper import Mapper
 
 
 def initialise_test():

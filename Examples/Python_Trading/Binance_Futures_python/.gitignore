@@ -1,0 +1,18 @@
+*.pyc
+build/*
+dist/*
+binance_futures.egg-info/*
+
+# jupyter
+*.ipynb_checkpoints
+*.ipynb
+
+# Mac system
+.DS_Store
+
+# VSCode
+.vscode
+
+# Python venv
+.venv
+.binance_futures

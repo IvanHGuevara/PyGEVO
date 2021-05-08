@@ -1,7 +1,7 @@
 from subprocess import call
 import os
 import glob
-from os import remove,rename,rmdir
+from os import remove,rename
 import shutil
 class Compiler:
     def __init__(self) -> None:

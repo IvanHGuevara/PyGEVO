@@ -1,6 +1,5 @@
 import glob
 import os
-from os import remove
 from distutils.core import setup
 from Cython.Build import cythonize
 import pyximport

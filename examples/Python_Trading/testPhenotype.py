@@ -1,0 +1,3 @@
+import examples.Python_Trading.fitnesFunction as ff
+phenotype="(5,(smallerThan(r['volume_fi'],r['trend_ichimoku_b']) and smallerThan(r['volatility_bbw'],r['volume_sma_em'])),(greaterThan(r['volume_cmf'],r['volatility_bbli']) and (greaterThan(r_ant['momentum_ppo_signal'],r['trend_macd']) and smallerThan(r['volatility_bbhi'],r['volatility_kchi']))))"
+ff.fitnesFunction_futuro(symbol="BTCUSDT",graficTypeNum=4,init="1 Jan, 2021",end="1 Apr, 2022",typeMarket="future",phenotype=phenotype)
