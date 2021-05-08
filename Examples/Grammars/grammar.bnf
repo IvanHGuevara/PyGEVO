@@ -1,3 +1,0 @@
-<inicio>:=izquierda <sig>|derecha <sig>|atras
-<sig>:=adelantar <motriz>|atras <motriz>
-<motriz>:=golpear|agacharse|disparar
