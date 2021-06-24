@@ -1,0 +1,198 @@
+Experiment run: 1
+Number of individuals: 100
+Individual size: 32
+Number of generations: 20
+Porcent Selection: 0.1
+-------------------------------------------------------------------
+
+Generation:  0
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  10
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  1
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  21
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  2
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  34
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  3
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  50
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  4
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  71
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  5
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  100
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  6
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  138
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  7
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  190
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  8
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  262
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  9
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  359
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  10
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  492
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  11
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  675
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  12
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  924
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  13
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  1267
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  14
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  1735
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  15
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  2378
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  16
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  3258
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  17
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  4463
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  18
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  6115
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Generation:  19
+===================================================================
+selecting individuals with a probability of:  0.1
+Grabbing a batch of:  8379
+mutating individuals.......
+generating crossover.......
+reevaluate new population
+Show top ten:
+[144  75 180   2 173  59  17  92  95  97 181  91 170  27 100  19 244 222
+ 122  32  87 154  89 209 147 225  73 123  88  56 222 251]
+lshape(5,200,200,lshape(1,300,200,square(4,700,800,lshape(8,800,600))))
+4
+========================================================================================================
+[144 233 122 136  74 106  90  92 234  97 112  91 170  11  57  70 244  20
+ 131  36 100  61 110  31  14 218  30 194 184  47 117 251]
+square(3,600,200,square(1,500,100,square(1,100,500,lshape(3,300,400))))
+4
+========================================================================================================
+[144 217  34 136 195  65  17  57  17  19 112  91 170  11 153 208 244 117
+  35  32  78 140 143 115 118 210 143 122 138 181  62 189]
+square(3,400,200,lshape(1,300,200,square(4,700,800,lshape(6,300,600))))
+4
+========================================================================================================
+[144  75 180  74 193 106  17  91 234  97 152 200 170 166 153  19 244  20
+  25  78 134 115 205  84 144 173 150  82  78 203 240  87]
+lshape(5,200,200,lshape(1,300,200,square(4,700,800,lshape(8,800,600))))
+4
+========================================================================================================
+[144 201  34 249  57 161  17  92 234 241 137  92 170 219 153  91 244  20
+  22 213 138 178 108  23 135 218 184  80 176 235 177 251]
+square(3,400,200,square(5,300,300,lshape(3,500,300,square(3,100,500))))
+4
+========================================================================================================
+[144 233 122 124  85 106  17  92 234 111 192  91  92  11 200  35 244 249
+ 104 245  80  22  68  23 138 218 119  46 247 203  72 241]
+square(3,600,200,square(1,500,100,square(1,100,500,lshape(3,300,400))))
+4
+========================================================================================================
+[144 217  34 136 213 114  17  92 234  97  67  91  49 205 221  19 244  20
+ 122 237 140  23 198 194 207 192  59 122  78  67 166 189]
+square(3,400,200,lshape(1,300,200,square(4,700,800,lshape(6,300,600))))
+4
+========================================================================================================
+[144  75 180  74 193 106  17  91 234  97 152 200 170 166 153  19 244  20
+  25  78 134 115 205  84 144 173 150  82  78 203 240  87]
+lshape(5,200,200,lshape(1,300,200,square(4,700,800,lshape(8,800,600))))
+4
+========================================================================================================
+[144 201  34  46  74 106 147  92 199  97  77  91 243  11 153  19 244 127
+ 122  32  87  22 108  23 174  44 119 103  78 203  43 189]
+square(3,400,200,square(5,300,300,lshape(3,500,300,square(3,100,500))))
+4
+========================================================================================================
+[144 233 122 124  85 106  17  92 234 111 192  91  92  11 200  35 244 249
+ 104 245  80  22  68  23 138 218 119  46 247 203  72 241]
+square(3,600,200,square(1,500,100,square(1,100,500,lshape(3,300,400))))
+4
+========================================================================================================
