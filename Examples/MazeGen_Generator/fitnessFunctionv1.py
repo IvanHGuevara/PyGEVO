@@ -30,6 +30,8 @@ def eshape(composedElement = None):
   # calculate
 def fitnessFunction(phenotype):
   eval(phenotype)
+  value = builder.figureCounter
+  builder.figureCounter = 0
+  return value, builder.stringBuild
     
 builder = ScenarioBuilder()
-fitnessFunction("square(eshape(triangle()))")

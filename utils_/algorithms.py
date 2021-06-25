@@ -55,13 +55,14 @@ class Algorithms:
             newPopulation = list(General_functions.async_map_g(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
             newPopulation = sorted(newPopulation, key=lambda ind: (ind.fitness_score,len(ind.phenotype)), reverse=reverse)
             population.pop = newPopulation
+            self.showTopTen(newPopulation)
         if validIndividuals:
             population.filterValidIndividuals()
         if orderedByFitness:
             population.orderIndividualsByFitness()
         return population
 
-    def showTopTen(population):
+    def showTopTen(_, population):
         print("Top ten:")
         for ind in population[0:9]:
             print(ind.genotype)
