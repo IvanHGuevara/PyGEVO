@@ -1,0 +1,16 @@
+apscheduler==3.7.0
+beepy==1.0.7
+Cython==0.29.22
+dateparser==1.0.0
+gevent==21.1.2
+matplotlib==3.3.3
+pathlib==1.0.1
+pytz==2020.1
+ta==0.7.0
+tabulate==0.8.7
+websocket-client==0.58.0
+
+numpy~=1.19.1
+pandas~=1.1.3
+requests~=2.24.0
+setuptools~=54.1.1
