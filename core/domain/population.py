@@ -5,7 +5,7 @@ from .mapper import Mapper
 from .grammarWrapper import GrammarWrapper
 class Population:
 
-    def __init__(self, grammarPath,numberIndividuals, individualSize = 5,fitness_function=None) -> None:
+    def __init__(self, grammarPath, numberIndividuals, individualSize = 5,fitness_function=None) -> None:
 
         self.numberIndividuals = numberIndividuals
         self.individualSize = individualSize
@@ -26,7 +26,7 @@ class Population:
                 scoreDic = self.phenotypeScore.get(ind.phenotype, (-1,False,0))
 
                 if scoreDic[0]==-1:
-                    score=self.fitness_function(ind)
+                    score=self.fitness_function(ind.phenotype)
                     ind.fitness_score=score
                     self.phenotypeScore[ind.phenotype] = (score,False,0)
                 else:
@@ -61,7 +61,7 @@ class Population:
             # (None, inCache,use) -> no se encontro en cache
             if tuple[0] is None:
                 countFail=countFail+1
-                ind.fitness_score = self.fitness_function(ind)
+                ind.fitness_score = self.fitness_function(ind.phenotype)
 
             else:
                 countMatch=countMatch+1

@@ -1,2 +1,1 @@
-<scenario> :=  triangle() | square() | eshape() | lshape() | <composedRules>
-<composedRules> := triangle(<scenario>)  | square(<scenario>)  | eshape(<scenario>)  | lshape(<scenario>)
+<scenario> :=  triangle() | square() | eshape() | lshape() | triangle(<scenario>)  | square(<scenario>)  | eshape(<scenario>)  | lshape(<scenario>)

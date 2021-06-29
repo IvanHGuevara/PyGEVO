@@ -2,10 +2,10 @@ from compiler import Compiler
 if Compiler.cythonEnabled:
     import pyximport
     pyximport.install()
-from utils_.domain_objects.mapper import Mapper
-from utils_.grammarWrapper import GrammarWrapper
-from utils_.general_functions import General_functions
-from .search_operators.ga import GA
+from core.domain.mapper import Mapper
+from core.domain.grammarWrapper import GrammarWrapper
+from core.domain.generalFunctions import General_functions
+from core.searchOperators.gaCore import GA
 import numpy as np
 import pickle
 
@@ -26,13 +26,13 @@ class Algorithms:
                 ind.phenotype = evolvedIndividuals[idx]
         return population
 
-    def evolveWithGE(self, population, fitness_function, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True, debug=False, validIndividuals=True, orderedByFitness=True ):
+    def evolveWithGE(self, population, populationFactory=None, fitness_function = None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True, debug=False, noDuplicates=True,cacheScore=True, validIndividuals=True ):
         self.gen=gen
         evolvedIndividuals = []
         for generationNumber in range(gen):
             print("Generation: ", generationNumber)
             print("===================================================================")
-            for ind in population.pop:
+            for ind in population:
                 ind.phenotype=self.mapper.mapBNF(ind.genotype, initBNF - 1)[0]
                 evolvedIndividuals.append(ind)
             if staticSelection<=0:
@@ -47,20 +47,15 @@ class Algorithms:
                 f=open(fileSave+'.txt', 'wb')
                 f.write(pickle.dumps(population))
                 f.close()
-            individualBatch = list(General_functions.async_map_g(lambda indG: GA.mutateInd(indG), individualBatch))
+            individualBatch_1 = list(General_functions.async_map(lambda indG: GA.mutateInd(indG), individualBatch))
             print("generating crossover.......")
             individualBatch = GA.crossover(individualBatch)
-            newPopulation = np.concatenate((individualBatch, population.pop))
+            newPopulation = np.concatenate((individualBatch, individualBatch_1))
             print("reevaluate new population")
-            newPopulation = list(General_functions.async_map_g(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
+            newPopulation = list(General_functions.async_map(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
             newPopulation = sorted(newPopulation, key=lambda ind: (ind.fitness_score,len(ind.phenotype)), reverse=reverse)
-            population.pop = newPopulation
             self.showTopTen(newPopulation)
-        if validIndividuals:
-            population.filterValidIndividuals()
-        if orderedByFitness:
-            population.orderIndividualsByFitness()
-        return population
+        return newPopulation
 
     def showTopTen(_, population):
         print("Top ten:")
@@ -68,4 +63,19 @@ class Algorithms:
             print(ind.genotype)
             print(ind.phenotype)
             print(ind.fitness_score)
+            print("========================================================================================================")
+
+    def showTopTenWithKiviLanguage(_, population):
+        print("Top ten:")
+        i = 0
+        for ind in population[0:9]:
+            print(ind.genotype)
+            print(ind.phenotype)
+            print(ind.fitness_score)
+            print(ind.stringBuild)
+            f = open("KiviFile" + "_" + str(i) + ".txt", "wt")
+            print(ind.stringBuild)
+            f.write(ind.stringBuild)
+            f.close()
+            i = i + 1
             print("========================================================================================================")

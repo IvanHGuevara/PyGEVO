@@ -15,5 +15,4 @@ def processIndividual(individual):
 pop = Population(numberIndividuals=100, individualSize=32)
 population = pop.generatePop()
 algo = Algorithms("grammar.bnf", initBNF=1, debug=False)
-evolvedPop = algo.evolveWithGE(population, processIndividual,gen=15,porcentSelect=0.1,fileSave="",reverse=False,debug=True)
-evolvedPop.showTopTen()
+evolvedPop = algo.evolveWithGE(population, processIndividual,gen=15,porcentSelect=0.1,fileSave="",reverse=True,debug=True)
