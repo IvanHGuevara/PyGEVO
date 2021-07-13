@@ -19,7 +19,7 @@ def triangle(composedElement = None):
 
 def lshape(composedElement = None):
   if composedElement != None:
-    eval(composedElement)  
+    eval(composedElement)
   builder.createLShape(random.choice(width), random.choice(number), random.choice(number))
 
 def eshape(composedElement = None):
@@ -27,13 +27,18 @@ def eshape(composedElement = None):
     eval(composedElement)
   builder.createEShape(random.choice(width), random.choice(number), random.choice(number), random.choice(number), random.choice(number))
 
-  # We need to create an intermediate board where we draw the elements somehow, this way we 
-  # calculate
 @cached(cache={})
 def fitnessFunction(phenotype):
-  eval(phenotype)
-  value = builder.figureCounter
+  try:
+    builder.addHeader()
+    eval(phenotype)
+    value = builder.figureCounter
+    stringBuild = builder.stringBuild
+  except:
+    value = 0
+    stringBuild = ""
   builder.figureCounter = 0
-  return value, builder.stringBuild
+  builder.stringBuild = ""
+  return value, stringBuild
     
 builder = ScenarioBuilder()

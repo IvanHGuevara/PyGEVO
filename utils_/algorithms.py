@@ -52,6 +52,7 @@ class Algorithms:
             individualBatch = GA.crossover(individualBatch)
             newPopulation = np.concatenate((individualBatch, individualBatch_1))
             print("reevaluate new population")
+            newPopulation = list(set(newPopulation))
             newPopulation = list(General_functions.async_map(lambda ind: GA.evaluate(ind, fitness_function), newPopulation))
             newPopulation = sorted(newPopulation, key=lambda ind: (ind.fitness_score,len(ind.phenotype)), reverse=reverse)
             self.showTopTen(newPopulation)

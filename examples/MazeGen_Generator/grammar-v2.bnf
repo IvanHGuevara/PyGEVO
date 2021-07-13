@@ -1,0 +1,3 @@
+<scenario> := < | 
+<components> :=
+<objective> := leftObjective() | rightObjective() | upperObjective() | bottomObjective()

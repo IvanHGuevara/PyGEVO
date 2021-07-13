@@ -1,6 +1,7 @@
 import sys
 sys.path.append('../../')
 from Examples.MazeGen_Generator.ScenarioBuilder import ScenarioBuilder
+from cachetools import cached
 import numpy as np
 
 def square(width, coordinateX, coordinateY, composedElement = None):
@@ -25,10 +26,14 @@ def eshape(width, coordinateX, coordinateY, coordinateZ, coordinateK, composedEl
 
   # We need to create an intermediate board where we draw the elements somehow, this way we 
   # calculate
-def fitnessFunction(phenotype):
-  eval(phenotype)
-  value = builder.figureCounter
-  builder.figureCounter = 0
-  return value
+@cached(cache={})
+def fitnessFunction(individual):
+  if individual.isValid():
+    eval(individual.phenotype)
+    value = builder.figureCounter
+    builder.figureCounter = 0
+    return value
+  else:
+    return 0
     
 builder = ScenarioBuilder()

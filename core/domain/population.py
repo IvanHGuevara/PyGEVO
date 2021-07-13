@@ -1,19 +1,17 @@
 import numpy as np
 from .Individual import Individual
 from .mapper import Mapper
-
 from .grammarWrapper import GrammarWrapper
+
 class Population:
 
     def __init__(self, grammarPath, numberIndividuals, individualSize = 5,fitness_function=None) -> None:
-
         self.numberIndividuals = numberIndividuals
         self.individualSize = individualSize
         self.pop = []
         self.mapper = Mapper(GrammarWrapper.createFromFile(grammarPath))
         self.phenotypeScore={}
         self.fitness_function=fitness_function
-
 
     def generatePop(self):
         individuals = []
@@ -24,9 +22,8 @@ class Population:
             ind.phenotype = self.mapper.mapBNF(ind.genotype, 0)[0]
             if self.fitness_function is not None:
                 scoreDic = self.phenotypeScore.get(ind.phenotype, (-1,False,0))
-
                 if scoreDic[0]==-1:
-                    score=self.fitness_function(ind.phenotype)
+                    score=self.fitness_function(ind)
                     ind.fitness_score=score
                     self.phenotypeScore[ind.phenotype] = (score,False,0)
                 else:
@@ -79,7 +76,6 @@ class Population:
         if cacheScore:
             #se elimina de cache si no se utilizo dos veces seguidas
             for phenotype in list(self.phenotypeScore.keys()):
-
                 if phenotype not in list(map(lambda ind : ind.phenotype,inds)):
                     item = self.phenotypeScore[phenotype]
                     if item[2]>=-maxCacheInactiveItem:
