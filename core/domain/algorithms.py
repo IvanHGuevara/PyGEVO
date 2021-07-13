@@ -29,7 +29,6 @@ class Algorithms:
 
     def evolveWithGE(self, population, populationFactory=None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True,debug=False,noDuplicates=True,cacheScore=True,print=print,titule=""):
         self.gen=gen
-
         individualBatch=np.array(population)
         for generationNumber in range(gen):
             print("===================================================================")

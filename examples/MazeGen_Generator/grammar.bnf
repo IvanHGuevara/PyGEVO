@@ -1,0 +1,4 @@
+<scenario> :=  triangle(<size>,<number>,<number>) | square(<size>,<number>,<number>) | eshape(<size>,<number>,<number>,<number>,<number>) | lshape(<size>,<number>,<number>) | <composedRules>
+<composedRules> := triangle(<size>,<number>,<number>,<scenario>)  | square(<size>,<number>,<number>,<scenario>)  | eshape(<size>,<number>,<number>,<number>,<number>,<scenario>)  | lshape(<size>,<number>,<number>,<scenario>) 
+<size> := 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
+<number> := 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800

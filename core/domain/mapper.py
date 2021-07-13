@@ -44,6 +44,5 @@ class Mapper:
                         codons=np.random.randint(255, size=(0))
                 else:
                     return xDefinition,len(codons[1:])
-
             return xDefinition,0
 

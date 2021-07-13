@@ -4,9 +4,7 @@ from gevent.pool import Group
 from multiprocessing.pool import ThreadPool
 import multiprocessing
 class General_functions:
-
-
-
+    
     #interface
     def async_map(f,iterable):
         def async_map_a(coroutine_func, iterable):
