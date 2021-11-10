@@ -58,7 +58,7 @@ class Population:
             # (None, inCache,use) -> no se encontro en cache
             if tuple[0] is None:
                 countFail=countFail+1
-                ind.fitness_score = self.fitness_function(ind.phenotype)
+                ind.fitness_score = self.fitness_function(ind)
 
             else:
                 countMatch=countMatch+1
