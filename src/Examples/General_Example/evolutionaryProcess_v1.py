@@ -14,5 +14,5 @@ grammar="grammar.bnf"
 pop = Population(grammar,numberIndividuals=10000, individualSize=8, fitness_function=FitnessFunctions.rosenbrock)
 population = pop.generatePop()
 algo = Algorithms(grammar, initBNF=56)
-evolvedPop = algo.evolveWithGE(population, populationFactory=pop, gen=400, porcentSelect=0.6, staticSelection=250,debug=True, cacheScore=False)
+evolvedPop = algo.evolveWithGE_v1(population, populationFactory=pop, gen=400, porcentSelect=0.6, staticSelection=250, debug=True)
 print("Time taken:", time.time() - s)

@@ -74,3 +74,42 @@ class Algorithms:
                     #print("========================================================================================================")
 
         return population
+    
+    def evolveWithGE_v1(self, population, populationFactory=None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True, debug=False, noDuplicates=True):
+        self.gen=gen
+        individualBatch=np.array(population)
+        for generationNumber in range(gen):
+            print("===================================================================")
+            print("Generation: "+ str(generationNumber))
+            print("===================================================================")
+            if staticSelection<=0:
+                print("selecting individuals with a probability of: ", porcentSelect)
+            else:
+                print("selecting individuals : "+str(staticSelection))
+                print("Grabbing a batch of: "+str(len(individualBatch)))
+                print("mutating individuals.......")
+                #Save Population
+            if fileSave != "":
+                f=open(fileSave, 'wb')
+                f.write(pickle.dumps(individualBatch))
+                f.close()
+
+            individualBatch_1 = list(General_functions.async_map(lambda indG: GA.mutateInd(indG), individualBatch))
+
+            print("generating crossover.......")
+            individualBatch_1 = GA.crossover(individualBatch_1)
+
+            newPopulation = np.concatenate((individualBatch, individualBatch_1))
+            print("recalculate phenotypes and score .......")
+            newPopulation=populationFactory.recalculate_v1(newPopulation)
+            newPopulation = sorted(newPopulation, key=lambda ind: ind.fitness_score, reverse=reverse)
+            individualBatch = GA.select(newPopulation, porcentSelect, staticSelection)
+
+            if debug:
+                print("Top 10:")
+                for ind in individualBatch[:9]:
+                    print("Score:"+str(ind.fitness_score)+" -> ", end="")
+                    print(ind.phenotype)
+
+
+        return population

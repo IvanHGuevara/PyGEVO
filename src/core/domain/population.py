@@ -1,7 +1,9 @@
+from cachetools import cached, LRUCache
 import numpy as np
 from .Individual import Individual
 from .mapper import Mapper
 from .grammarWrapper import GrammarWrapper
+
 
 class Population:
 
@@ -91,4 +93,18 @@ class Population:
             return np.array(indsNew)
         else:
             return inds
-
+    
+    @cached(cache=LRUCache(maxsize=500))
+    def getPhenotype(self, ind):
+        return self.phenotypeScore.get(ind.phenotype, (None, False, 0))
+   
+    def recalculate_v1(self, inds):
+        for ind in inds:
+            # We generate new phenotypes
+            ind.phenotype = self.mapper.mapBNF(ind.genotype, 0)[0]
+            tuple=self.getPhenotype(ind)
+            if tuple[0] is None:
+                ind.fitness_score = self.fitness_function(ind)
+            else:
+                ind.fitness_score = tuple[0]
+        return inds

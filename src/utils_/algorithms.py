@@ -26,7 +26,7 @@ class Algorithms:
                 ind.phenotype = evolvedIndividuals[idx]
         return population
 
-    def evolveWithGE(self, population, populationFactory=None, fitness_function = None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True, debug=False, noDuplicates=True,cacheScore=True, validIndividuals=True ):
+    def evolveWithGE(self, population, populationFactory=None, fitness_function = None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True):
         self.gen=gen
         evolvedIndividuals = []
         for generationNumber in range(gen):
