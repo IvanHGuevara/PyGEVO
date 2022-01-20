@@ -1,9 +1,4 @@
-from math import sin,cos,log,tan,factorial,exp
 
-import numpy as np
-
-
-#dim=np.loadtxt("SampleData.txt",dtype=float)
 def assignFitness(evolved,dim):
   sum=0
   for i in range(0,len(dim)):
@@ -28,37 +23,19 @@ def myadd(a1,a2):
 def mysub(a1,a2):
   return a1-a2
 
-
 def mymul(a1,a2):
   return a1*a2
 
-
 def fitnesFunction(phenotype,dim):
-
     puntaje=0
-    #print(phenotype)
-
     for i in range(0,len(dim)):
-
         try:
-
             temp= eval(phenotype.lower())
-
-
             if temp == dim[i]:
                 puntaje = puntaje + 1
-
         except:
-
-
             return puntaje
-            #print(phenotype.lower())
-            #print(str(i+1))
-
-
-    #print(puntaje)
     return puntaje
-
 
 #dim = np.loadtxt("SampleData.txt", dtype=float)
 #num=fitnesFunction("cos(log(Dim[5][i]))",dim) #score=16
