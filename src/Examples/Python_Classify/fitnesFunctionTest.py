@@ -1,9 +1,5 @@
-from math import sin,cos,log
-
 import numpy as np
 
-
-#dim=np.loadtxt("SampleData.txt",dtype=float)
 def assignFitness(evolved,dim):
   sum=0
   for i in range(0,len(dim)):
@@ -28,22 +24,17 @@ def myadd(a1,a2):
 def mysub(a1,a2):
   return a1-a2
 
-
 def mymul(a1,a2):
   return a1*a2
-
 
 def fitnesFunction(phenotype,dim):
     evolved = np.zeros(len(dim), dtype=float)
     for i in range(0,len(dim)):
         print(dim[i][5])
         try:
-
             temp= eval(phenotype.lower())
-
         except:
             temp=0
-
         if temp < 0 and dim[i][-1] == 0:
             evolved[i]=1
         elif temp > 0 and dim[i][-1] == 1:

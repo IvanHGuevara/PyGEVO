@@ -63,7 +63,6 @@ class Algorithms:
             newPopulation = sorted(newPopulation, key=lambda ind: ind.fitness_score, reverse=reverse)
             individualBatch = GA.select(newPopulation, porcentSelect, staticSelection)
 
-
             if debug:
                 print("Top 10:")
                 for ind in individualBatch[:9]:
@@ -75,7 +74,7 @@ class Algorithms:
 
         return population
     
-    def evolveWithGE_v1(self, population, populationFactory=None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True, debug=False, noDuplicates=True):
+    def evolveWithGE_v1(self, population, populationFactory=None, gen = 1, initBNF=1, porcentSelect=0.5, staticSelection=0, fileSave="", reverse=True, debug=False):
         self.gen=gen
         individualBatch=np.array(population)
         for generationNumber in range(gen):
@@ -102,6 +101,7 @@ class Algorithms:
             newPopulation = np.concatenate((individualBatch, individualBatch_1))
             print("recalculate phenotypes and score .......")
             newPopulation=populationFactory.recalculate_v1(newPopulation)
+            newPopulation = list(filter((lambda ind: ind.isValid()), newPopulation))
             newPopulation = sorted(newPopulation, key=lambda ind: ind.fitness_score, reverse=reverse)
             individualBatch = GA.select(newPopulation, porcentSelect, staticSelection)
 
@@ -110,6 +110,5 @@ class Algorithms:
                 for ind in individualBatch[:9]:
                     print("Score:"+str(ind.fitness_score)+" -> ", end="")
                     print(ind.phenotype)
-
 
         return population

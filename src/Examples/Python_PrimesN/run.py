@@ -24,8 +24,7 @@ def createPhenotypes():
     population = pop.generatePop()
     algo = Algorithms(grammar, initBNF=1, debug=False)
     evolvedPop = algo.evolveWithGE_v1(population, populationFactory=pop, gen=10000, porcentSelect=0.5, fileSave=fileSave, reverse=True, debug=True, staticSelection=1000)
-    inds = list(filter((lambda ind: ind.isValid()), evolvedPop))
-    inds=sorted(inds,key=lambda ind: ind.fitness_score, reverse=True)
+    inds=sorted(evolvedPop,key=lambda ind: ind.fitness_score, reverse=True)
     print("")
     print("Best 20:")
     for ind in inds[0:20]:

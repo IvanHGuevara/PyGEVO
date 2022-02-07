@@ -1,4 +1,3 @@
-from math import sin,cos,log
 import numpy as np
 
 FitnessCases=40

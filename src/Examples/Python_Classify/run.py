@@ -1,14 +1,13 @@
 import sys
 sys.path.append('../../')
-from compiler import Compiler
-
-comp=Compiler()
+#from compiler import Compiler
+#comp=Compiler()
 #comp.enableCython()
-comp.compile()
+#comp.compile()
 
 import pyximport
 pyximport.install()
-from examples.Python_Classify.FitnessFunction import FitnessFunction
+from Examples.Python_Classify.FitnessFunction import FitnessFunction
 import numpy as np
 import sys
 sys.path.append('../../')
@@ -34,7 +33,6 @@ def processIndividual(ind, debug = False):
     return ind.fitness_score
 
 def createPhenotypes():
-
     grammar="grammar.bnf"
     pop = Population(grammar,numberIndividuals=100, individualSize=200,fitness_function=processIndividual)
     population = pop.generatePop()
