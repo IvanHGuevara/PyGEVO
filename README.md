@@ -1,6 +1,6 @@
-# PyGE: a pythonic Grammatical Evolution framework
+# PyGEVO: a pythonic Grammatical Evolution framework
 
-PyGE is a pythonic low-code framework for Grammatical Evolution. Minimalistic, efficient and powerful, this framework aims to enable non-expert users to easily wrap up a GE experiment in a few lines of codes:
+PyGEVO is a pythonic low-code framework for Grammatical Evolution. Minimalistic, efficient and powerful, this framework aims to enable non-expert users to easily wrap up a GE experiment in a few lines of codes:
 
 ```python
 from core.domain.population import Population
@@ -12,7 +12,7 @@ population = Algorithms("grammar_ANSI_C.bnf", initBNF=56).evolveWithGE(populatio
 population.showTopTen()
 ```
 
-PyGE has also the capability to cythonize the whole project, in order to have better performance. For this we call the Compiler and indicate it to compile the project (to import Cython classes is always recommended to use pyximport):
+PyGEVO has also the capability to cythonize the whole project, in order to have better performance. For this we call the Compiler and indicate it to compile the project (to import Cython classes is always recommended to use pyximport):
 
 ```python
 from compiler import Compiler
@@ -32,7 +32,7 @@ population.showTopTen()
 
 This is inspired in the work from __[Prof. Conor Ryan](https://www.linkedin.com/in/conor-ryan-5166b083/)__ [1]
 
-PyGE is still in an ALPHA stage
+PyGEVO is still in an ALPHA stage
 
 Primary Authors
 ===============
