@@ -1,5 +1,4 @@
 apscheduler==3.7.0
-beepy==1.0.7
 Cython==0.29.22
 dateparser==1.0.0
 gevent==21.1.2

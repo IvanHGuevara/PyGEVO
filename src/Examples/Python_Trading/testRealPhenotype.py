@@ -15,7 +15,7 @@ from tabulate import tabulate
 import warnings
 from datetime import datetime
 from datetime import timedelta
-import beepy
+
 class TestRealPhenotype:
     def __init__(self,symbol="BTCUSDT",interval=6,phenotype=None,lapsoMinutes=5,debug=False,trading=False) -> None:
         with open('config.json') as f:
@@ -38,8 +38,6 @@ class TestRealPhenotype:
         self.lapsoMinutes=lapsoMinutes
     def alarm(self,sound="coin",n=3):
         for i in range(1,n):
-            beepy.beep(sound=sound)
-            beepy.beep(sound=sound)
             time.sleep(1)
 
         return 0
