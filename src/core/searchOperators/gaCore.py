@@ -40,9 +40,10 @@ class GA:
 
     @staticmethod
     def crossover(individuals):
-
         gs=[]
         g = list(ind for ind in individuals)
+        if not g:
+            raise Exception('List empty. Try adding more individuals or changing the selection percentage')
         point = random.randint(1, len(g[0].genotype) - 1)
         for ind1,ind2 in zip(g[0::2], g[1::2]):
             ind1New=copy.deepcopy(ind1)
