@@ -58,7 +58,7 @@ class ScenarioBuilder:
         self.stringBuild = self.stringBuild + "\t" + "\t" + "Rectangle: " +  "\n"
         self.stringBuild = self.stringBuild + "\t" + "\t" + "\t" + "pos:" + str(coordinateX) + ","  + str(coordinateY) + "\n"
         self.stringBuild = self.stringBuild + "\t" + "\t" + "\t" + "size:" + str(width) + ","  + str(width) + "\n"
-        self.figureCounter = self.figureCounter + # self.returnAccordingScore(width)
+        self.figureCounter = self.figureCounter +  self.returnAccordingScore(width)
         return self.figureCounter
 
     def createTriangle(self, width, coordinateX, coordinateY, checkSize = False):  

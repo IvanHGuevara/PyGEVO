@@ -1,6 +1,5 @@
 from kivy.app import App
 from kivy.lang import Builder
-
 root = Builder.load_string('''
 StackLayout:
 	canvas:
@@ -14,79 +13,89 @@ StackLayout:
 			width: 5
 			close: True
 		Color: 
-			rgba: 1, 1, 1, 1
-		Rectangle: 
-			pos:700,100
-			size:2,2
-		Color: 
-			rgba: 1, 1, 1, 1
+			rgba: 0, 0, 1, 1
 		Line: 
-			points: 600,300,100,600
-			width: 8
-		Line: 
-			points: 600,300,600,600
-			width: 8
-		Line: 
-			points: 600,600,600,600
-			width: 8
-		Line: 
-			points: 600,600,600,600
-			width: 8
-		Color: 
-			rgba: 1, 1, 1, 1
-		Rectangle: 
-			pos:200,500
-			size:7,7
-		Color: 
-			rgba: 1, 1, 1, 1
-		Line: 
-			points: 300,300,300,350
+			points: 200,200,200,150
 			width: 5
 		Line: 
-			points: 300,300,350,300
+			points: 200,200,1000,200
+			width: 5
+		Line: 
+			points: 1000,200,1000,150
 			width: 5
 		Color: 
 			rgba: 1, 1, 1, 1
 		Rectangle: 
-			pos:100,700
-			size:400,400
+			pos:400,400
+			size: 50, 50
+		Rectangle: 
+			pos:400,450
+			size: 50, 50
+		Rectangle: 
+			pos:400,500
+			size: 50, 50
+		Rectangle: 
+			pos:400,550
+			size: 50, 50
+		Rectangle: 
+			pos:400,600
+			size: 50, 50
+		Rectangle: 
+			pos:400,650
+			size: 50, 50
+		Rectangle: 
+			pos:400,700
+			size: 50, 50
+		Rectangle: 
+			pos:400,750
+			size: 50, 50
 		Color: 
 			rgba: 1, 1, 1, 1
 		Rectangle: 
-			pos:200,700
-			size:3,3
-		Color: 
-			rgba: 1, 1, 1, 1
-		Line: 
-			points: 400,200,400,250
-			width: 7
-		Line: 
-			points: 400,200,450,200
-			width: 7
-		Color: 
-			rgba: 1, 1, 1, 1
+			pos:350,350
+			size: 50, 50
 		Rectangle: 
-			pos:600,100
-			size:4,4
-		Color: 
-			rgba: 1, 1, 1, 1
+			pos:400,350
+			size: 50, 50
 		Rectangle: 
-			pos:200,300
-			size:1,1
+			pos:450,350
+			size: 50, 50
+		Rectangle: 
+			pos:500,350
+			size: 50, 50
+		Rectangle: 
+			pos:550,350
+			size: 50, 50
+		Rectangle: 
+			pos:600,350
+			size: 50, 50
+		Rectangle: 
+			pos:650,350
+			size: 50, 50
+		Rectangle: 
+			pos:700,350
+			size: 50, 50
 		Color: 
-			rgba: 1, 1, 1, 1
+			rgba: 0, 0, 1, 1
 		Line: 
-			points: 400,700,800,500
-			width: 1
+			points:400,400,425,425,450,400
+			width: 5
+		Color: 
+			rgba: 0, 0, 1, 1
 		Line: 
-			points: 400,700,450,400
-			width: 1
+			points:150,150,175,175,200,150
+			width: 5
+		Color: 
+			rgba: 0, 0, 1, 1
 		Line: 
-			points: 400,450,450,450
-			width: 1
+			points: 200,200,200,150
+			width: 5
 		Line: 
-			points: 400,500,450,500
-			width: 1
+			points: 200,200,1000,200
+			width: 5
+		Line: 
+			points: 1000,200,1000,150
+			width: 5
 ''')
 
 

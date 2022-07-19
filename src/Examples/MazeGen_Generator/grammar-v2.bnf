@@ -1,3 +1,2 @@
-<scenario> := < | 
-<components> :=
-<objective> := leftObjective() | rightObjective() | upperObjective() | bottomObjective()
+<scenario> := cobot() | productionLine() | wall(<wallType>) | router(<scenario>) | cobot(<scenario>) | productionLine(<scenario>) | wall(<wallType>,<scenario>)
+<wallType> := 0 | 1
